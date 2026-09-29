@@ -6,7 +6,8 @@ using UnityEngine.InputSystem;
 
 public class CharacterMovement : MonoBehaviour
 {
-    private float playerSpeed = 5.0f;
+    private float playerSpeed = 7.0f;
+    private float sprintMultiplier = 1.8f;
     private float jumpHeight = 1.5f;
     private float gravityValue = -9.81f;
 
@@ -17,17 +18,20 @@ public class CharacterMovement : MonoBehaviour
     [Header("Input Actions")]
     public InputActionReference moveAction;
     public InputActionReference jumpAction;
+    public InputActionReference sprintAction;
 
     private void OnEnable()
     {
         moveAction.action.Enable();
         jumpAction.action.Enable();
+        sprintAction.action.Enable();
     }
 
     private void OnDisable()
     {
         moveAction.action.Disable();
         jumpAction.action.Disable();
+        sprintAction.action.Disable();
     }
 
     void Update()
@@ -58,8 +62,13 @@ public class CharacterMovement : MonoBehaviour
         // Apply gravity
         playerVelocity.y += gravityValue * Time.deltaTime;
 
+        // Sprint while the button is held
+        bool isSprinting = sprintAction.action.IsPressed();
+        float currentSpeed = isSprinting ? playerSpeed * sprintMultiplier : playerSpeed;
+
+
         // Move
-        Vector3 finalMove = move * playerSpeed + Vector3.up * playerVelocity.y;
+        Vector3 finalMove = move * currentSpeed + Vector3.up * playerVelocity.y;
         controller.Move(finalMove * Time.deltaTime);
     }
 }
