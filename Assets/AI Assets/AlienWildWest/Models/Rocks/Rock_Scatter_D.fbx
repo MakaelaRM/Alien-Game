@@ -1,0 +1,273 @@
+; FBX 7.4.0 project file
+; ----------------------------------------------------
+
+FBXHeaderExtension:  {
+	FBXHeaderVersion: 1003
+	FBXVersion: 7400
+	CreationTimeStamp:  {
+		Version: 1000
+		Year: 2026
+		Month: 10
+		Day: 7
+		Hour: 15
+		Minute: 45
+		Second: 0
+		Millisecond: 0
+	}
+	Creator: "Alien Wild West asset pack exporter"
+}
+GlobalSettings:  {
+	Version: 1000
+	Properties70:  {
+		P: "UpAxis", "int", "Integer", "",1
+		P: "UpAxisSign", "int", "Integer", "",1
+		P: "FrontAxis", "int", "Integer", "",2
+		P: "FrontAxisSign", "int", "Integer", "",1
+		P: "CoordAxis", "int", "Integer", "",0
+		P: "CoordAxisSign", "int", "Integer", "",1
+		P: "OriginalUpAxis", "int", "Integer", "",1
+		P: "OriginalUpAxisSign", "int", "Integer", "",1
+		P: "UnitScaleFactor", "double", "Number", "",100
+		P: "OriginalUnitScaleFactor", "double", "Number", "",100
+		P: "AmbientColor", "ColorRGB", "Color", "",0,0,0
+		P: "DefaultCamera", "KString", "", "", "Producer Perspective"
+		P: "TimeMode", "enum", "", "",11
+		P: "TimeSpanStart", "KTime", "Time", "",0
+		P: "TimeSpanStop", "KTime", "Time", "",46186158000
+		P: "CustomFrameRate", "double", "Number", "",-1
+	}
+}
+
+; Documents Description
+;------------------------------------------------------------------
+
+Documents:  {
+	Count: 1
+	Document: 1000004, "", "Scene" {
+		Properties70:  {
+			P: "SourceObject", "object", "", ""
+			P: "ActiveAnimStackName", "KString", "", "", ""
+		}
+		RootNode: 0
+	}
+}
+
+; Document References
+;------------------------------------------------------------------
+
+References:  {
+}
+
+; Object definitions
+;------------------------------------------------------------------
+
+Definitions:  {
+	Version: 100
+	Count: 6
+	ObjectType: "GlobalSettings" {
+		Count: 1
+	}
+	ObjectType: "Model" {
+		Count: 1
+		PropertyTemplate: "FbxNode" {
+			Properties70:  {
+				P: "QuaternionInterpolate", "enum", "", "",0
+				P: "RotationOffset", "Vector3D", "Vector", "",0,0,0
+				P: "RotationPivot", "Vector3D", "Vector", "",0,0,0
+				P: "ScalingOffset", "Vector3D", "Vector", "",0,0,0
+				P: "ScalingPivot", "Vector3D", "Vector", "",0,0,0
+				P: "TranslationActive", "bool", "", "",0
+				P: "RotationActive", "bool", "", "",0
+				P: "ScalingActive", "bool", "", "",0
+				P: "RotationOrder", "enum", "", "",0
+				P: "InheritType", "enum", "", "",0
+				P: "PreRotation", "Vector3D", "Vector", "",0,0,0
+				P: "PostRotation", "Vector3D", "Vector", "",0,0,0
+				P: "GeometricTranslation", "Vector3D", "Vector", "",0,0,0
+				P: "GeometricRotation", "Vector3D", "Vector", "",0,0,0
+				P: "GeometricScaling", "Vector3D", "Vector", "",1,1,1
+				P: "Show", "bool", "", "",1
+				P: "DefaultAttributeIndex", "int", "Integer", "",-1
+				P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
+				P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+				P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+				P: "Visibility", "Visibility", "", "A",1
+				P: "Visibility Inheritance", "Visibility Inheritance", "", "",1
+			}
+		}
+	}
+	ObjectType: "Geometry" {
+		Count: 1
+		PropertyTemplate: "FbxMesh" {
+			Properties70:  {
+				P: "Color", "ColorRGB", "Color", "",0.8,0.8,0.8
+				P: "BBoxMin", "Vector3D", "Vector", "",0,0,0
+				P: "BBoxMax", "Vector3D", "Vector", "",0,0,0
+				P: "Primary Visibility", "bool", "", "",1
+				P: "Casts Shadows", "bool", "", "",1
+				P: "Receive Shadows", "bool", "", "",1
+			}
+		}
+	}
+	ObjectType: "Material" {
+		Count: 3
+		PropertyTemplate: "FbxSurfacePhong" {
+			Properties70:  {
+				P: "ShadingModel", "KString", "", "", "Phong"
+				P: "MultiLayer", "bool", "", "",0
+				P: "EmissiveColor", "Color", "", "A",0,0,0
+				P: "EmissiveFactor", "Number", "", "A",1
+				P: "AmbientColor", "Color", "", "A",0.2,0.2,0.2
+				P: "AmbientFactor", "Number", "", "A",1
+				P: "DiffuseColor", "Color", "", "A",0.8,0.8,0.8
+				P: "DiffuseFactor", "Number", "", "A",1
+				P: "TransparentColor", "Color", "", "A",0,0,0
+				P: "TransparencyFactor", "Number", "", "A",0
+				P: "Opacity", "Number", "", "A",1
+				P: "SpecularColor", "Color", "", "A",0.2,0.2,0.2
+				P: "SpecularFactor", "Number", "", "A",1
+				P: "Shininess", "Number", "", "A",20
+				P: "ShininessExponent", "Number", "", "A",20
+				P: "ReflectionColor", "Color", "", "A",0,0,0
+				P: "ReflectionFactor", "Number", "", "A",1
+			}
+		}
+	}
+}
+
+; Object properties
+;------------------------------------------------------------------
+
+Objects:  {
+	Geometry: 1000005, "Geometry::Rock_Scatter_D", "Mesh" {
+		Vertices: *36 {
+			a: -0.141776,0.364165,0,0.181867,0.412816,0,-0.178465,0,0,0.197867,0,0,0,0.077493,0.247287,0,0.305966,0.245616,0,0.054128,-0.297693,0,0.326289,-0.289461,0.250757,0.192116,-0.154976,0.292268,0.192116,0.180632,-0.260958,0.192116,-0.161281,-0.302425,0.192116,0.186909
+		}
+		PolygonVertexIndex: *60 {
+			a: 0,11,-6,0,5,-2,0,1,-8,0,7,-11,0,10,-12,1,5,-10,5,11,-5,11,10,-3,10,7,-7,7,1,-9,3,9,-5,3,4,-3,3,2,-7,3,6,-9,3,8,-10,4,9,-6,2,4,-12,6,2,-11,8,6,-8,9,8,-2
+		}
+		GeometryVersion: 124
+		LayerElementNormal: 0 {
+			Version: 101
+			Name: ""
+			MappingInformationType: "ByPolygonVertex"
+			ReferenceInformationType: "Direct"
+			Normals: *180 {
+				a: -0.390014,0.819766,0.419372,-0.390014,0.819766,0.419372,-0.390014,0.819766,0.419372,-0.141575,0.941808,0.304885,-0.141575,0.941808,0.304885,-0.141575,0.941808,0.304885,-0.145704,0.969272,-0.198196,-0.145704,0.969272,-0.198196,-0.145704,0.969272,-0.198196,-0.562418,0.7384,-0.37209,-0.562418,0.7384,-0.37209,-0.562418,0.7384,-0.37209,-0.775875,0.624083,-0.092402,-0.775875,0.624083,-0.092402,-0.775875,0.624083,-0.092402,0.402755,0.691901,0.599218,0.402755,0.691901,0.599218,0.402755,0.691901,0.599218,-0.193161,0.007173,0.981141,-0.193161,0.007173,0.981141,
+-0.193161,0.007173,0.981141,-0.878949,-0.465286,-0.104678,-0.878949,-0.465286,-0.104678,-0.878949,-0.465286,-0.104678,-0.451855,0.026973,-0.891684,-0.451855,0.026973,-0.891684,-0.451855,0.026973,-0.891684,0.603763,0.575674,-0.551425,0.603763,0.575674,-0.551425,0.603763,0.575674,-0.551425,0.410351,-0.723533,0.555079,0.410351,-0.723533,0.555079,0.410351,-0.723533,0.555079,0,-0.954243,0.299034,0,-0.954243,0.299034,0,-0.954243,0.299034,0,-0.983869,-0.178892,0,-0.983869,-0.178892,0,-0.983869,-0.178892,0.619478,-0.589096,-0.518858,
+0.619478,-0.589096,-0.518858,0.619478,-0.589096,-0.518858,0.930088,-0.348857,-0.115042,0.930088,-0.348857,-0.115042,0.930088,-0.348857,-0.115042,0.219686,0.007132,0.975544,0.219686,0.007132,0.975544,0.219686,0.007132,0.975544,-0.391522,-0.758894,0.520376,-0.391522,-0.758894,0.520376,-0.391522,-0.758894,0.520376,-0.59226,-0.65188,-0.473584,-0.59226,-0.65188,-0.473584,-0.59226,-0.65188,-0.473584,0.483428,0.026467,-0.874984,0.483428,0.026467,-0.874984,0.483428,0.026467,-0.874984,0.922727,0.368168,-0.114132,0.922727,0.368168,-0.114132,0.922727,0.368168,-0.114132
+			}
+		}
+		LayerElementMaterial: 0 {
+			Version: 101
+			Name: ""
+			MappingInformationType: "ByPolygon"
+			ReferenceInformationType: "IndexToDirect"
+			Materials: *20 {
+				a: 0,0,0,0,0,0,1,2,1,0,2,2,2,2,2,1,2,2,1,1
+			}
+		}
+		Layer: 0 {
+			Version: 100
+			LayerElement:  {
+				Type: "LayerElementNormal"
+				TypedIndex: 0
+			}
+			LayerElement:  {
+				Type: "LayerElementMaterial"
+				TypedIndex: 0
+			}
+		}
+	}
+	Model: 1000006, "Model::Rock_Scatter_D", "Mesh" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	Material: 1000001, "Material::Mat_Terracotta", "" {
+		Version: 102
+		ShadingModel: "phong"
+		MultiLayer: 0
+		Properties70:  {
+			P: "DiffuseColor", "Color", "", "A",0.823529,0.376471,0.184314
+			P: "DiffuseFactor", "Number", "", "A",1
+			P: "AmbientColor", "Color", "", "A",0,0,0
+			P: "EmissiveColor", "Color", "", "A",0,0,0
+			P: "EmissiveFactor", "Number", "", "A",0
+			P: "TransparentColor", "Color", "", "A",1,1,1
+			P: "TransparencyFactor", "Number", "", "A",0
+			P: "Opacity", "Number", "", "A",1
+			P: "SpecularColor", "Color", "", "A",0.1,0.1,0.1
+			P: "Shininess", "Number", "", "A",10
+			P: "ShininessExponent", "Number", "", "A",10
+		}
+	}
+	Material: 1000002, "Material::Mat_RustRock", "" {
+		Version: 102
+		ShadingModel: "phong"
+		MultiLayer: 0
+		Properties70:  {
+			P: "DiffuseColor", "Color", "", "A",0.65098,0.25098,0.168627
+			P: "DiffuseFactor", "Number", "", "A",1
+			P: "AmbientColor", "Color", "", "A",0,0,0
+			P: "EmissiveColor", "Color", "", "A",0,0,0
+			P: "EmissiveFactor", "Number", "", "A",0
+			P: "TransparentColor", "Color", "", "A",1,1,1
+			P: "TransparencyFactor", "Number", "", "A",0
+			P: "Opacity", "Number", "", "A",1
+			P: "SpecularColor", "Color", "", "A",0.1,0.1,0.1
+			P: "Shininess", "Number", "", "A",10
+			P: "ShininessExponent", "Number", "", "A",10
+		}
+	}
+	Material: 1000003, "Material::Mat_ShadowRock", "" {
+		Version: 102
+		ShadingModel: "phong"
+		MultiLayer: 0
+		Properties70:  {
+			P: "DiffuseColor", "Color", "", "A",0.352941,0.180392,0.227451
+			P: "DiffuseFactor", "Number", "", "A",1
+			P: "AmbientColor", "Color", "", "A",0,0,0
+			P: "EmissiveColor", "Color", "", "A",0,0,0
+			P: "EmissiveFactor", "Number", "", "A",0
+			P: "TransparentColor", "Color", "", "A",1,1,1
+			P: "TransparencyFactor", "Number", "", "A",0
+			P: "Opacity", "Number", "", "A",1
+			P: "SpecularColor", "Color", "", "A",0.1,0.1,0.1
+			P: "Shininess", "Number", "", "A",10
+			P: "ShininessExponent", "Number", "", "A",10
+		}
+	}
+}
+
+; Object connections
+;------------------------------------------------------------------
+
+Connections:  {
+	
+	;Model::Rock_Scatter_D, Model::RootNode
+	C: "OO",1000006,0
+	
+	;Geometry::Rock_Scatter_D, Model::Rock_Scatter_D
+	C: "OO",1000005,1000006
+	
+	;Material::Mat_Terracotta, Model::Rock_Scatter_D
+	C: "OO",1000001,1000006
+	
+	;Material::Mat_RustRock, Model::Rock_Scatter_D
+	C: "OO",1000002,1000006
+	
+	;Material::Mat_ShadowRock, Model::Rock_Scatter_D
+	C: "OO",1000003,1000006
+}
+;Takes section
+;----------------------------------------------------
+
+Takes:  {
+	Current: ""
+}
