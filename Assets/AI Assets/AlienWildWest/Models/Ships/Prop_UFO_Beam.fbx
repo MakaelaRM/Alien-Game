@@ -1,0 +1,234 @@
+; FBX 7.4.0 project file
+; ----------------------------------------------------
+
+FBXHeaderExtension:  {
+	FBXHeaderVersion: 1003
+	FBXVersion: 7400
+	CreationTimeStamp:  {
+		Version: 1000
+		Year: 2026
+		Month: 10
+		Day: 7
+		Hour: 15
+		Minute: 45
+		Second: 0
+		Millisecond: 0
+	}
+	Creator: "Alien Wild West asset pack exporter"
+}
+GlobalSettings:  {
+	Version: 1000
+	Properties70:  {
+		P: "UpAxis", "int", "Integer", "",1
+		P: "UpAxisSign", "int", "Integer", "",1
+		P: "FrontAxis", "int", "Integer", "",2
+		P: "FrontAxisSign", "int", "Integer", "",1
+		P: "CoordAxis", "int", "Integer", "",0
+		P: "CoordAxisSign", "int", "Integer", "",1
+		P: "OriginalUpAxis", "int", "Integer", "",1
+		P: "OriginalUpAxisSign", "int", "Integer", "",1
+		P: "UnitScaleFactor", "double", "Number", "",100
+		P: "OriginalUnitScaleFactor", "double", "Number", "",100
+		P: "AmbientColor", "ColorRGB", "Color", "",0,0,0
+		P: "DefaultCamera", "KString", "", "", "Producer Perspective"
+		P: "TimeMode", "enum", "", "",11
+		P: "TimeSpanStart", "KTime", "Time", "",0
+		P: "TimeSpanStop", "KTime", "Time", "",46186158000
+		P: "CustomFrameRate", "double", "Number", "",-1
+	}
+}
+
+; Documents Description
+;------------------------------------------------------------------
+
+Documents:  {
+	Count: 1
+	Document: 1000002, "", "Scene" {
+		Properties70:  {
+			P: "SourceObject", "object", "", ""
+			P: "ActiveAnimStackName", "KString", "", "", ""
+		}
+		RootNode: 0
+	}
+}
+
+; Document References
+;------------------------------------------------------------------
+
+References:  {
+}
+
+; Object definitions
+;------------------------------------------------------------------
+
+Definitions:  {
+	Version: 100
+	Count: 4
+	ObjectType: "GlobalSettings" {
+		Count: 1
+	}
+	ObjectType: "Model" {
+		Count: 1
+		PropertyTemplate: "FbxNode" {
+			Properties70:  {
+				P: "QuaternionInterpolate", "enum", "", "",0
+				P: "RotationOffset", "Vector3D", "Vector", "",0,0,0
+				P: "RotationPivot", "Vector3D", "Vector", "",0,0,0
+				P: "ScalingOffset", "Vector3D", "Vector", "",0,0,0
+				P: "ScalingPivot", "Vector3D", "Vector", "",0,0,0
+				P: "TranslationActive", "bool", "", "",0
+				P: "RotationActive", "bool", "", "",0
+				P: "ScalingActive", "bool", "", "",0
+				P: "RotationOrder", "enum", "", "",0
+				P: "InheritType", "enum", "", "",0
+				P: "PreRotation", "Vector3D", "Vector", "",0,0,0
+				P: "PostRotation", "Vector3D", "Vector", "",0,0,0
+				P: "GeometricTranslation", "Vector3D", "Vector", "",0,0,0
+				P: "GeometricRotation", "Vector3D", "Vector", "",0,0,0
+				P: "GeometricScaling", "Vector3D", "Vector", "",1,1,1
+				P: "Show", "bool", "", "",1
+				P: "DefaultAttributeIndex", "int", "Integer", "",-1
+				P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
+				P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+				P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+				P: "Visibility", "Visibility", "", "A",1
+				P: "Visibility Inheritance", "Visibility Inheritance", "", "",1
+			}
+		}
+	}
+	ObjectType: "Geometry" {
+		Count: 1
+		PropertyTemplate: "FbxMesh" {
+			Properties70:  {
+				P: "Color", "ColorRGB", "Color", "",0.8,0.8,0.8
+				P: "BBoxMin", "Vector3D", "Vector", "",0,0,0
+				P: "BBoxMax", "Vector3D", "Vector", "",0,0,0
+				P: "Primary Visibility", "bool", "", "",1
+				P: "Casts Shadows", "bool", "", "",1
+				P: "Receive Shadows", "bool", "", "",1
+			}
+		}
+	}
+	ObjectType: "Material" {
+		Count: 1
+		PropertyTemplate: "FbxSurfacePhong" {
+			Properties70:  {
+				P: "ShadingModel", "KString", "", "", "Phong"
+				P: "MultiLayer", "bool", "", "",0
+				P: "EmissiveColor", "Color", "", "A",0,0,0
+				P: "EmissiveFactor", "Number", "", "A",1
+				P: "AmbientColor", "Color", "", "A",0.2,0.2,0.2
+				P: "AmbientFactor", "Number", "", "A",1
+				P: "DiffuseColor", "Color", "", "A",0.8,0.8,0.8
+				P: "DiffuseFactor", "Number", "", "A",1
+				P: "TransparentColor", "Color", "", "A",0,0,0
+				P: "TransparencyFactor", "Number", "", "A",0
+				P: "Opacity", "Number", "", "A",1
+				P: "SpecularColor", "Color", "", "A",0.2,0.2,0.2
+				P: "SpecularFactor", "Number", "", "A",1
+				P: "Shininess", "Number", "", "A",20
+				P: "ShininessExponent", "Number", "", "A",20
+				P: "ReflectionColor", "Color", "", "A",0,0,0
+				P: "ReflectionFactor", "Number", "", "A",1
+			}
+		}
+	}
+}
+
+; Object properties
+;------------------------------------------------------------------
+
+Objects:  {
+	Geometry: 1000003, "Geometry::Prop_UFO_Beam", "Mesh" {
+		Vertices: *72 {
+			a: 1.931852,0,0.517638,1.414214,0,1.414214,0.517638,0,1.931852,-0.517638,0,1.931852,-1.414214,0,1.414214,-1.931852,0,0.517638,-1.931852,0,-0.517638,-1.414214,0,-1.414214,-0.517638,0,-1.931852,0.517638,0,-1.931852,1.414214,0,-1.414214,1.931852,0,-0.517638,0.579555,5.85,0.155291,0.424264,5.85,0.424264,0.155291,5.85,0.579555,-0.155291,5.85,0.579555,-0.424264,5.85,0.424264,-0.579555,5.85,0.155291,-0.579555,5.85,-0.155291,-0.424264,5.85,-0.424264,
+-0.155291,5.85,-0.579555,0.155291,5.85,-0.579555,0.424264,5.85,-0.424264,0.579555,5.85,-0.155291
+		}
+		PolygonVertexIndex: *72 {
+			a: 12,13,-2,12,1,-1,13,14,-3,13,2,-2,14,15,-4,14,3,-3,15,16,-5,15,4,-4,16,17,-6,16,5,-5,17,18,-7,17,6,-6,18,19,-8,18,7,-7,19,20,-9,19,8,-8,20,21,-10,20,9,-9,21,22,-11,21,10,-10,
+22,23,-12,22,11,-11,23,12,-1,23,0,-12
+		}
+		GeometryVersion: 124
+		LayerElementNormal: 0 {
+			Version: 101
+			Name: ""
+			MappingInformationType: "ByPolygonVertex"
+			ReferenceInformationType: "Direct"
+			Normals: *216 {
+				a: 0.843775,0.225223,0.487154,0.843775,0.225223,0.487154,0.843775,0.225223,0.487154,0.843775,0.225223,0.487154,0.843775,0.225223,0.487154,0.843775,0.225223,0.487154,0.487154,0.225223,0.843775,0.487154,0.225223,0.843775,0.487154,0.225223,0.843775,0.487154,0.225223,0.843775,0.487154,0.225223,0.843775,0.487154,0.225223,0.843775,0,0.225223,0.974307,0,0.225223,0.974307,0,0.225223,0.974307,0,0.225223,0.974307,0,0.225223,0.974307,0,0.225223,0.974307,-0.487154,0.225223,0.843775,-0.487154,0.225223,0.843775,
+-0.487154,0.225223,0.843775,-0.487154,0.225223,0.843775,-0.487154,0.225223,0.843775,-0.487154,0.225223,0.843775,-0.843775,0.225223,0.487154,-0.843775,0.225223,0.487154,-0.843775,0.225223,0.487154,-0.843775,0.225223,0.487154,-0.843775,0.225223,0.487154,-0.843775,0.225223,0.487154,-0.974307,0.225223,0,-0.974307,0.225223,0,-0.974307,0.225223,0,-0.974307,0.225223,0,-0.974307,0.225223,0,-0.974307,0.225223,0,-0.843775,0.225223,-0.487154,-0.843775,0.225223,-0.487154,-0.843775,0.225223,-0.487154,-0.843775,0.225223,-0.487154,
+-0.843775,0.225223,-0.487154,-0.843775,0.225223,-0.487154,-0.487154,0.225223,-0.843775,-0.487154,0.225223,-0.843775,-0.487154,0.225223,-0.843775,-0.487154,0.225223,-0.843775,-0.487154,0.225223,-0.843775,-0.487154,0.225223,-0.843775,0,0.225223,-0.974307,0,0.225223,-0.974307,0,0.225223,-0.974307,0,0.225223,-0.974307,0,0.225223,-0.974307,0,0.225223,-0.974307,0.487154,0.225223,-0.843775,0.487154,0.225223,-0.843775,0.487154,0.225223,-0.843775,0.487154,0.225223,-0.843775,0.487154,0.225223,-0.843775,0.487154,0.225223,-0.843775,
+0.843775,0.225223,-0.487154,0.843775,0.225223,-0.487154,0.843775,0.225223,-0.487154,0.843775,0.225223,-0.487154,0.843775,0.225223,-0.487154,0.843775,0.225223,-0.487154,0.974307,0.225223,0,0.974307,0.225223,0,0.974307,0.225223,0,0.974307,0.225223,0,0.974307,0.225223,0,0.974307,0.225223,0
+			}
+		}
+		LayerElementMaterial: 0 {
+			Version: 101
+			Name: ""
+			MappingInformationType: "AllSame"
+			ReferenceInformationType: "IndexToDirect"
+			Materials: *1 {
+				a: 0
+			}
+		}
+		Layer: 0 {
+			Version: 100
+			LayerElement:  {
+				Type: "LayerElementNormal"
+				TypedIndex: 0
+			}
+			LayerElement:  {
+				Type: "LayerElementMaterial"
+				TypedIndex: 0
+			}
+		}
+	}
+	Model: 1000004, "Model::Prop_UFO_Beam", "Mesh" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	Material: 1000001, "Material::Mat_TractorBeam", "" {
+		Version: 102
+		ShadingModel: "phong"
+		MultiLayer: 0
+		Properties70:  {
+			P: "DiffuseColor", "Color", "", "A",0.607843,1,0.941176
+			P: "DiffuseFactor", "Number", "", "A",1
+			P: "AmbientColor", "Color", "", "A",0,0,0
+			P: "EmissiveColor", "Color", "", "A",0.607843,1,0.941176
+			P: "EmissiveFactor", "Number", "", "A",1.5
+			P: "TransparentColor", "Color", "", "A",1,1,1
+			P: "TransparencyFactor", "Number", "", "A",0.6
+			P: "Opacity", "Number", "", "A",0.4
+			P: "SpecularColor", "Color", "", "A",0.1,0.1,0.1
+			P: "Shininess", "Number", "", "A",10
+			P: "ShininessExponent", "Number", "", "A",10
+		}
+	}
+}
+
+; Object connections
+;------------------------------------------------------------------
+
+Connections:  {
+	
+	;Model::Prop_UFO_Beam, Model::RootNode
+	C: "OO",1000004,0
+	
+	;Geometry::Prop_UFO_Beam, Model::Prop_UFO_Beam
+	C: "OO",1000003,1000004
+	
+	;Material::Mat_TractorBeam, Model::Prop_UFO_Beam
+	C: "OO",1000001,1000004
+}
+;Takes section
+;----------------------------------------------------
+
+Takes:  {
+	Current: ""
+}
