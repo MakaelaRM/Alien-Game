@@ -1,0 +1,289 @@
+# Alien Wild West shared palette
+newmtl Mat_Sand
+Kd 0.8902 0.7098 0.4353
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Terracotta
+Kd 0.8235 0.3765 0.1843
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_RustRock
+Kd 0.6510 0.2510 0.1686
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_ShadowRock
+Kd 0.3529 0.1804 0.2275
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_FadedWood
+Kd 0.6902 0.5412 0.3686
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_DarkWood
+Kd 0.4196 0.2902 0.2078
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_PaintedWood
+Kd 0.4157 0.2471 0.6902
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Cactus
+Kd 0.3686 0.6196 0.2902
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Foliage
+Kd 0.6039 0.6392 0.3098
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Bone
+Kd 0.9490 0.9020 0.8118
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Metal
+Kd 0.5529 0.6000 0.6510
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_DarkMetal
+Kd 0.2275 0.2471 0.2941
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Chrome
+Kd 0.8353 0.8627 0.8941
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Brass
+Kd 0.8510 0.6431 0.2549
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_SolarBlue
+Kd 0.1373 0.2510 0.4314
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Glass
+Kd 0.7490 0.9137 0.9490
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 0.35
+illum 2
+
+newmtl Mat_Void
+Kd 0.1333 0.1020 0.1686
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_NeonLaser
+Kd 0.0980 0.8471 0.7686
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+Ke 0.0980 0.8471 0.7686
+illum 2
+
+newmtl Mat_NeonGreen
+Kd 0.3608 1.0000 0.2314
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+Ke 0.3608 1.0000 0.2314
+illum 2
+
+newmtl Mat_NeonCyan
+Kd 0.1804 0.9490 1.0000
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+Ke 0.1804 0.9490 1.0000
+illum 2
+
+newmtl Mat_NeonCrystal
+Kd 0.2392 0.8784 0.8157
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+Ke 0.2392 0.8784 0.8157
+illum 2
+
+newmtl Mat_NeonAmber
+Kd 1.0000 0.6902 0.1804
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+Ke 1.0000 0.6902 0.1804
+illum 2
+
+newmtl Mat_SlimeGreen
+Kd 0.6510 1.0000 0.1804
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+Ke 0.6510 1.0000 0.1804
+illum 2
+
+newmtl Mat_TractorBeam
+Kd 0.6078 1.0000 0.9412
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 0.40
+Ke 0.6078 1.0000 0.9412
+illum 2
+
+newmtl Mat_HeroWhite
+Kd 0.9451 0.9255 0.8784
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_HeroRed
+Kd 0.8863 0.2784 0.2314
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_HeroBlue
+Kd 0.1765 0.4235 0.8745
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_HeroYellow
+Kd 1.0000 0.7843 0.2392
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_PaintedWood
+Kd 0.4157 0.2471 0.6902
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_NeonLaser
+Kd 0.0980 0.8471 0.7686
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+Ke 0.0980 0.8471 0.7686
+illum 2
+
+newmtl Mat_PaintedWoodDark
+Kd 0.3373 0.1961 0.6039
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_WoodMid
+Kd 0.6039 0.4627 0.3137
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_RoofDark
+Kd 0.3059 0.2118 0.1490
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_AdobeDark
+Kd 0.7882 0.6039 0.3451
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_AlienWater
+Kd 0.4941 0.9490 0.2902
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+Ke 0.4941 0.9490 0.2902
+illum 2
