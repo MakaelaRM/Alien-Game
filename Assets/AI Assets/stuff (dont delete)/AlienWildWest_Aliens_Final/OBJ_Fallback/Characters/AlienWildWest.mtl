@@ -1,0 +1,1648 @@
+# Alien Wild West shared palette
+newmtl Mat_Sand
+Kd 0.8902 0.7098 0.4353
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Terracotta
+Kd 0.8235 0.3765 0.1843
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_RustRock
+Kd 0.6510 0.2510 0.1686
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_ShadowRock
+Kd 0.3529 0.1804 0.2275
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_FadedWood
+Kd 0.6902 0.5412 0.3686
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_DarkWood
+Kd 0.4196 0.2902 0.2078
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_PaintedWood
+Kd 0.4157 0.2471 0.6902
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Cactus
+Kd 0.3686 0.6196 0.2902
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Foliage
+Kd 0.6039 0.6392 0.3098
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Bone
+Kd 0.9490 0.9020 0.8118
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Metal
+Kd 0.5529 0.6000 0.6510
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_DarkMetal
+Kd 0.2275 0.2471 0.2941
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Chrome
+Kd 0.8353 0.8627 0.8941
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Brass
+Kd 0.8510 0.6431 0.2549
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_SolarBlue
+Kd 0.1373 0.2510 0.4314
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Glass
+Kd 0.7490 0.9137 0.9490
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 0.35
+illum 2
+
+newmtl Mat_Void
+Kd 0.1333 0.1020 0.1686
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_NeonLaser
+Kd 0.0980 0.8471 0.7686
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+Ke 0.0980 0.8471 0.7686
+illum 2
+
+newmtl Mat_NeonGreen
+Kd 0.3608 1.0000 0.2314
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+Ke 0.3608 1.0000 0.2314
+illum 2
+
+newmtl Mat_NeonCyan
+Kd 0.1804 0.9490 1.0000
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+Ke 0.1804 0.9490 1.0000
+illum 2
+
+newmtl Mat_NeonCrystal
+Kd 0.2392 0.8784 0.8157
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+Ke 0.2392 0.8784 0.8157
+illum 2
+
+newmtl Mat_NeonAmber
+Kd 1.0000 0.6902 0.1804
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+Ke 1.0000 0.6902 0.1804
+illum 2
+
+newmtl Mat_SlimeGreen
+Kd 0.6510 1.0000 0.1804
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+Ke 0.6510 1.0000 0.1804
+illum 2
+
+newmtl Mat_TractorBeam
+Kd 0.6078 1.0000 0.9412
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 0.40
+Ke 0.6078 1.0000 0.9412
+illum 2
+
+newmtl Mat_HeroWhite
+Kd 0.9451 0.9255 0.8784
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_HeroRed
+Kd 0.8863 0.2784 0.2314
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_HeroBlue
+Kd 0.1765 0.4235 0.8745
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_HeroYellow
+Kd 1.0000 0.7843 0.2392
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_PaintedWood
+Kd 0.4157 0.2471 0.6902
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_NeonLaser
+Kd 0.0980 0.8471 0.7686
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+Ke 0.0980 0.8471 0.7686
+illum 2
+
+newmtl Mat_PaintedWoodDark
+Kd 0.3373 0.1961 0.6039
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_WoodMid
+Kd 0.6039 0.4627 0.3137
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_RoofDark
+Kd 0.3059 0.2118 0.1490
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_AdobeDark
+Kd 0.7882 0.6039 0.3451
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_SkinBlue
+Kd 0.4353 0.5451 1.0000
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_SkinBlueDark
+Kd 0.2980 0.3882 0.8392
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_SkinOrange
+Kd 1.0000 0.6039 0.2392
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_SkinOrangeDark
+Kd 0.8784 0.4392 0.1647
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_SkinLilac
+Kd 0.7333 0.6588 0.9412
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_SkinLilacDark
+Kd 0.5608 0.4745 0.8392
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_SkinTeal
+Kd 0.2471 0.7882 0.7059
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_SkinTealDark
+Kd 0.1647 0.6039 0.5412
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_VisorGold
+Kd 1.0000 0.7608 0.3020
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 0.55
+illum 2
+
+newmtl Mat_SkinPeri
+Kd 0.5490 0.4824 1.0000
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_SkinPeriDark
+Kd 0.4157 0.3451 0.8588
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_SkinSky
+Kd 0.3686 0.7843 1.0000
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_SkinSkyDark
+Kd 0.2275 0.5922 0.8314
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Skin_tri0
+Kd 0.8784 0.4784 0.3725
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Skin_tri0L
+Kd 0.9569 0.7529 0.6039
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Skin_tri0D
+Kd 0.6627 0.2784 0.2275
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Skin_tri1
+Kd 0.8510 0.5569 0.2902
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Skin_tri1L
+Kd 0.9490 0.8000 0.5804
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Skin_tri1D
+Kd 0.6118 0.3529 0.1647
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Skin_tri2
+Kd 0.7843 0.4157 0.4706
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Skin_tri2L
+Kd 0.9412 0.7255 0.6902
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Skin_tri2D
+Kd 0.5569 0.2471 0.3216
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Skin_disc0
+Kd 0.7255 0.6353 0.2902
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Skin_disc0L
+Kd 0.9020 0.8353 0.6039
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Skin_disc0D
+Kd 0.4314 0.3843 0.1882
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Skin_disc1
+Kd 0.6588 0.6902 0.3059
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Skin_disc1L
+Kd 0.8627 0.8863 0.6275
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Skin_disc1D
+Kd 0.3686 0.4157 0.1725
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Skin_disc2
+Kd 0.7804 0.6039 0.3216
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Skin_disc2L
+Kd 0.9216 0.8275 0.6353
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Skin_disc2D
+Kd 0.4784 0.3529 0.1725
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Skin_wisp0
+Kd 0.9098 0.7059 0.5412
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Skin_wisp0L
+Kd 0.9686 0.8627 0.7608
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Skin_wisp0D
+Kd 0.7216 0.4784 0.3216
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Skin_wisp1
+Kd 0.8863 0.6275 0.6275
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Skin_wisp1L
+Kd 0.9608 0.8235 0.8078
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Skin_wisp1D
+Kd 0.6902 0.4157 0.4157
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Skin_wisp2
+Kd 0.8510 0.7255 0.4784
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Skin_wisp2L
+Kd 0.9529 0.8863 0.7451
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Skin_wisp2D
+Kd 0.6588 0.5216 0.2902
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Leather
+Kd 0.4784 0.2902 0.1804
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Denim
+Kd 0.2471 0.3529 0.5490
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Gum_coral
+Kd 1.0000 0.5412 0.4196
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Gum_coralL
+Kd 1.0000 0.8157 0.7216
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Gum_coralD
+Kd 0.8510 0.3765 0.2902
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Gum_butter
+Kd 1.0000 0.8118 0.3686
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Gum_butterL
+Kd 1.0000 0.9294 0.7098
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Gum_butterD
+Kd 0.8510 0.6353 0.2275
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Gum_mint
+Kd 0.4980 0.8510 0.6902
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Gum_mintL
+Kd 0.7882 0.9490 0.8667
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Gum_mintD
+Kd 0.3098 0.6863 0.5255
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Gum_peach
+Kd 1.0000 0.6824 0.4784
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Gum_peachL
+Kd 1.0000 0.8627 0.7608
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Gum_peachD
+Kd 0.8784 0.4980 0.3098
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Gum_lilac
+Kd 0.7529 0.6353 0.9412
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Gum_lilacL
+Kd 0.9098 0.8627 0.9843
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Gum_lilacD
+Kd 0.5608 0.4196 0.8314
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Gum_apricot
+Kd 0.9608 0.6196 0.2980
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Gum_apricotL
+Kd 0.9882 0.8275 0.6510
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Gum_apricotD
+Kd 0.7882 0.4510 0.1647
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Gum_plum
+Kd 0.7098 0.4863 0.7882
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Gum_plumL
+Kd 0.9020 0.8118 0.9333
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Gum_plumD
+Kd 0.5294 0.3176 0.6000
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Gum_lime
+Kd 0.7255 0.8588 0.3843
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Gum_limeL
+Kd 0.9020 0.9529 0.7451
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Gum_limeD
+Kd 0.5294 0.6627 0.2275
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Gum_sand
+Kd 0.9216 0.7843 0.5490
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Gum_sandL
+Kd 0.9725 0.9059 0.7765
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Gum_sandD
+Kd 0.7451 0.5961 0.3451
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Gum_tomato
+Kd 0.9490 0.4392 0.3529
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Gum_tomatoL
+Kd 0.9843 0.7765 0.7216
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Gum_tomatoD
+Kd 0.7608 0.2902 0.2196
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Gum_sage
+Kd 0.6392 0.7882 0.5412
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Gum_sageL
+Kd 0.8627 0.9216 0.8118
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Gum_sageD
+Kd 0.4431 0.6039 0.3451
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Gum_honey
+Kd 0.9412 0.7137 0.2510
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Gum_honeyL
+Kd 0.9804 0.8745 0.6275
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_Gum_honeyD
+Kd 0.7529 0.5412 0.1176
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_VisorGreen
+Kd 0.3098 0.7608 0.4784
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 0.60
+illum 2
+
+newmtl Mat_BlipSkin0
+Kd 0.3098 0.8314 1.0000
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkin0D
+Kd 0.1647 0.6235 0.8784
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipTrim0
+Kd 0.1804 0.4196 1.0000
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkin1
+Kd 0.2745 0.9412 0.8235
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkin1D
+Kd 0.1216 0.7490 0.6510
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipTrim1
+Kd 0.1176 0.5490 1.0000
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkin2
+Kd 0.5608 0.4824 1.0000
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkin2D
+Kd 0.3961 0.3137 0.9020
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipTrim2
+Kd 0.2392 0.8471 1.0000
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkin3
+Kd 0.6510 0.9098 1.0000
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkin3D
+Kd 0.4235 0.7373 0.9098
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipTrim3
+Kd 0.2902 0.4824 1.0000
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkin4
+Kd 0.2471 0.5255 1.0000
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkin4D
+Kd 0.1451 0.3451 0.8392
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipTrim4
+Kd 0.1804 0.9020 1.0000
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkin5
+Kd 0.1804 0.9098 0.9098
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkin5D
+Kd 0.0863 0.7059 0.7686
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipTrim5
+Kd 0.4784 0.3608 1.0000
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkinG0
+Kd 0.1804 0.9098 0.5412
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkinG0D
+Kd 0.0902 0.7216 0.4000
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipTrimG0
+Kd 0.1176 0.4824 1.0000
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkinG1
+Kd 0.1882 0.8510 0.6510
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkinG1D
+Kd 0.0824 0.6588 0.4863
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipTrimG1
+Kd 0.2275 0.3608 1.0000
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkinG2
+Kd 0.4196 1.0000 0.5608
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkinG2D
+Kd 0.2314 0.8000 0.3843
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipTrimG2
+Kd 0.0863 0.7608 0.9098
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkinG3
+Kd 0.3608 0.9490 0.7529
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkinG3D
+Kd 0.1686 0.7608 0.5765
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipTrimG3
+Kd 0.4157 0.3608 1.0000
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkinG4
+Kd 0.1804 0.9098 0.5412
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkinG4D
+Kd 0.0902 0.7216 0.4000
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipTrimG4
+Kd 0.1176 0.4824 1.0000
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipIrisG4
+Kd 1.0000 0.7843 0.2392
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkinG5
+Kd 0.1882 0.8510 0.6510
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkinG5D
+Kd 0.0824 0.6588 0.4863
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipTrimG5
+Kd 0.2275 0.3608 1.0000
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipIrisG5
+Kd 0.6078 0.4196 1.0000
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkinG6
+Kd 0.3098 0.8314 1.0000
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkinG6D
+Kd 0.1647 0.6235 0.8784
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipTrimG6
+Kd 0.1804 0.4196 1.0000
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipIrisG6
+Kd 0.5490 0.9490 0.2275
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkinG7
+Kd 0.5608 0.4824 1.0000
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkinG7D
+Kd 0.3961 0.3137 0.9020
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipTrimG7
+Kd 0.2392 0.8471 1.0000
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipIrisG7
+Kd 0.1804 0.9490 1.0000
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkinR0
+Kd 0.2039 0.8157 0.3451
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkinR0D
+Kd 0.1216 0.6392 0.2431
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipTrimR0
+Kd 1.0000 0.5412 0.1216
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkinR1
+Kd 0.5569 0.8902 0.2275
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkinR1D
+Kd 0.3843 0.7098 0.1294
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipTrimR1
+Kd 0.1804 0.4196 1.0000
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipEyeR1
+Kd 0.1804 0.4196 1.0000
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkinR2
+Kd 0.3569 0.7608 0.2118
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkinR2D
+Kd 0.2392 0.5765 0.1216
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipTrimR2
+Kd 1.0000 0.7843 0.2392
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkinR3
+Kd 0.2314 1.0000 0.4314
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkinR3D
+Kd 0.1255 0.7882 0.2980
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipTrimR3
+Kd 0.4784 0.2392 1.0000
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipEyeR3
+Kd 0.4784 0.2392 1.0000
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkinR4
+Kd 1.0000 0.2941 0.2941
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkinR4D
+Kd 0.7882 0.1804 0.1804
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipTrimR4
+Kd 0.1804 0.4196 1.0000
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkinR5
+Kd 1.0000 0.5412 0.1216
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkinR5D
+Kd 0.8157 0.3961 0.0471
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipTrimR5
+Kd 0.0941 0.7216 0.7882
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipEyeR5
+Kd 0.0941 0.7216 0.7882
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkinR6
+Kd 1.0000 0.8235 0.2471
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkinR6D
+Kd 0.8510 0.6588 0.1020
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipTrimR6
+Kd 0.8863 0.2784 0.2314
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkinR7
+Kd 1.0000 0.4353 0.7098
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkinR7D
+Kd 0.8510 0.2902 0.5608
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipTrimR7
+Kd 0.2392 0.8471 1.0000
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipEyeR7
+Kd 0.2392 0.8471 1.0000
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkinR8
+Kd 0.6392 0.3569 1.0000
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkinR8D
+Kd 0.4784 0.2196 0.8510
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipTrimR8
+Kd 1.0000 0.7843 0.2392
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipEyeR8
+Kd 1.0000 0.7843 0.2392
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkinR9
+Kd 0.9098 0.2941 0.8784
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkinR9D
+Kd 0.7059 0.1725 0.6784
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipTrimR9
+Kd 0.3608 1.0000 0.2314
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkinR10
+Kd 0.8275 0.8627 0.9176
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkinR10D
+Kd 0.6196 0.6667 0.7490
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipTrimR10
+Kd 0.8863 0.2784 0.2314
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipEyeR10
+Kd 0.8863 0.2784 0.2314
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkinR11
+Kd 0.3059 0.3333 0.8784
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipSkinR11D
+Kd 0.1961 0.2196 0.6902
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipTrimR11
+Kd 1.0000 0.7843 0.2392
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipEyeR11
+Kd 1.0000 0.7843 0.2392
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipFinalSkin
+Kd 0.3608 0.7961 0.2431
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipFinalSkinD
+Kd 0.2314 0.6039 0.1490
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
+
+newmtl Mat_BlipFinalTrim
+Kd 0.8863 0.2784 0.2314
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 10
+d 1.00
+illum 2
