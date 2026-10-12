@@ -6,10 +6,11 @@ using UnityEngine.InputSystem;
 
 public class CharacterMovement : MonoBehaviour
 {
-    private float playerSpeed = 7.0f;
+    private float playerSpeed = 4f;
     private float sprintMultiplier = 1.8f;
-    private float jumpHeight = 1.5f;
-    private float gravityValue = -9.81f;
+    private float jumpHeight = 0.35f;
+    private float gravityValue = -3f;
+    private float turnSpeed = 10f;
 
     public CharacterController controller;
     private Vector3 playerVelocity;
@@ -51,7 +52,13 @@ public class CharacterMovement : MonoBehaviour
         move = Vector3.ClampMagnitude(move, 1f);
 
         if (move != Vector3.zero)
-            transform.forward = move;
+        {
+            Quaternion targetRotation = Quaternion.LookRotation(move);
+            controller.transform.rotation = Quaternion.Slerp(
+                controller.transform.rotation,
+                targetRotation,
+                turnSpeed * Time.deltaTime);
+        }
 
         // Jump using WasPressedThisFrame()
         if (groundedPlayer && jumpAction.action.WasPressedThisFrame())
