@@ -3617,9 +3617,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95c64e0778f40354b86ae41d86a125a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCInteractable
-  npcName: Shopkeeper
+  npcName: Restaurant Host
   chatBubblePrefab: {fileID: 8118450732210544728, guid: 6eb2ca46f0da35e4c87e18c45bd6b1bf, type: 3}
-  bubblePadding: 0.3
+  promptAnchorOffset: {x: 0, y: 0.12}
+  promptTilt: 0.5
+  focusHeight: 0.75
+  dialogueText: 'We ain''t runnin'' no soup kitchen here, Tinhorn. Come back later, and you better have some scratch in your pocket when you do. '
+  dialogueBubblePrefab: {fileID: 7400100000000000001, guid: 04655dae6d21cbb40bf62a655543b151, type: 3}
+  dialogueAnchorOffset: {x: -0.2, y: 0.06}
+  dialogueScale: 1
+  fitDialogueToView: 1
+  viewMargin: 0.04
 --- !u!1 &178830277 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8bbeb0dde9cd04ab38d63e16f75a3f4b, type: 3}
@@ -5896,9 +5904,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95c64e0778f40354b86ae41d86a125a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCInteractable
-  npcName: Kid
+  npcName: Bart
   chatBubblePrefab: {fileID: 8118450732210544728, guid: 6eb2ca46f0da35e4c87e18c45bd6b1bf, type: 3}
-  bubblePadding: 0.3
+  promptAnchorOffset: {x: 0, y: 0.12}
+  promptTilt: 0.5
+  focusHeight: 0.75
+  dialogueText: '...Yippie-yi-ooo...
+
+    \n...Yippie-yi-yayyy...
+
+    \n...Ghost riders in the skyyy...'
+  dialogueBubblePrefab: {fileID: 7400100000000000001, guid: 04655dae6d21cbb40bf62a655543b151, type: 3}
+  dialogueAnchorOffset: {x: -0.2, y: 0.06}
+  dialogueScale: 1
+  fitDialogueToView: 1
+  viewMargin: 0.04
 --- !u!1001 &329219889
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6151,6 +6171,8 @@ MonoBehaviour:
   bounds:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 10, y: 0, z: 10}
+  focusDistance: 2.5
+  focusTransitionTime: 1
 --- !u!1001 &331615806
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6257,9 +6279,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95c64e0778f40354b86ae41d86a125a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCInteractable
-  npcName: Banker
+  npcName: Bank Teller
   chatBubblePrefab: {fileID: 8118450732210544728, guid: 6eb2ca46f0da35e4c87e18c45bd6b1bf, type: 3}
-  bubblePadding: 0.3
+  promptAnchorOffset: {x: 0, y: 0.12}
+  promptTilt: 0.5
+  focusHeight: 0.75
+  dialogueText: Son, I know damn well you haven't 5 bucks to your name. If'n you're fixin' to case the place, just know every teller is packin a brand spankin new Vogon Blaster. Get on Varmint.
+  dialogueBubblePrefab: {fileID: 7400100000000000001, guid: 04655dae6d21cbb40bf62a655543b151, type: 3}
+  dialogueAnchorOffset: {x: -0.2, y: 0.06}
+  dialogueScale: 1
+  fitDialogueToView: 1
+  viewMargin: 0.04
 --- !u!1 &332183301 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8bbeb0dde9cd04ab38d63e16f75a3f4b, type: 3}
@@ -9510,7 +9540,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPCInteractable
   npcName: Bartender
   chatBubblePrefab: {fileID: 8118450732210544728, guid: 6eb2ca46f0da35e4c87e18c45bd6b1bf, type: 3}
-  bubblePadding: 0.3
+  promptAnchorOffset: {x: 0, y: 0.12}
+  promptTilt: 0.5
+  focusHeight: 0.75
+  dialogueText: 'Tenderfoot, let me tell you something. If''n you can''t even hack it with a little sulfur in yer lungs, my moonshine will have you cryin'' for mama. Not a chance in hell yer coming in. '
+  dialogueBubblePrefab: {fileID: 7400100000000000001, guid: 04655dae6d21cbb40bf62a655543b151, type: 3}
+  dialogueAnchorOffset: {x: -0.2, y: 0.06}
+  dialogueScale: 1
+  fitDialogueToView: 1
+  viewMargin: 0.04
 --- !u!1 &466701980 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8bbeb0dde9cd04ab38d63e16f75a3f4b, type: 3}
@@ -10808,7 +10846,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPCInteractable
   npcName: Sheriff
   chatBubblePrefab: {fileID: 8118450732210544728, guid: 6eb2ca46f0da35e4c87e18c45bd6b1bf, type: 3}
-  bubblePadding: 0.3
+  promptAnchorOffset: {x: 0, y: 0.12}
+  promptTilt: 0.5
+  focusHeight: 0.75
+  dialogueText: '...so anyways, I reckon I''m 3-4 whiskeys in at the saloon, all riled up and madder than an old wet hen... WHAT IN TARNATION?!?! Where the hell is Hubert? Get on you Galoot! '
+  dialogueBubblePrefab: {fileID: 7400100000000000001, guid: 04655dae6d21cbb40bf62a655543b151, type: 3}
+  dialogueAnchorOffset: {x: -0.2, y: 0.06}
+  dialogueScale: 1
+  fitDialogueToView: 1
+  viewMargin: 0.04
 --- !u!1 &510356046 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3924390359808885084, guid: 8bbeb0dde9cd04ab38d63e16f75a3f4b, type: 3}
@@ -16232,8 +16278,8 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings:
     - m_Name: 
-      m_Id: 186f139b-3130-45de-bfe1-b7b04604dd77
-      m_Path: <Keyboard>/#(F)
+      m_Id: 00e7955b-5ad4-4c3f-98d8-25867c1cf6f8
+      m_Path: <Keyboard>/#(E)
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -16241,7 +16287,26 @@ MonoBehaviour:
       m_Flags: 0
     m_Flags: 0
     m_Priority: 0
+  exitAction:
+    m_Name: ExitInteract
+    m_Type: 1
+    m_ExpectedControlType: 
+    m_Id: d5b9edef-091d-4271-9676-2230d6fe935d
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: ab067d0c-81b1-4fe2-924e-5adb30f0269e
+      m_Path: <Keyboard>/escape
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: ExitInteract
+      m_Flags: 0
+    m_Flags: 0
+    m_Priority: 0
   interactRange: 5
+  cameraController: {fileID: 0}
 --- !u!1001 &743421995
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21621,9 +21686,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95c64e0778f40354b86ae41d86a125a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCInteractable
-  npcName: Townie
+  npcName: Suit Salesman
   chatBubblePrefab: {fileID: 8118450732210544728, guid: 6eb2ca46f0da35e4c87e18c45bd6b1bf, type: 3}
-  bubblePadding: 0.3
+  promptAnchorOffset: {x: 0, y: 0.12}
+  promptTilt: 0.5
+  focusHeight: 0.75
+  dialogueText: Still using that crappy old spacesuit?  Shoooot brother no wonder yer spaceship came a crash'n down, Cheapskate! That thang still got DVD in it, huh Cowboy?
+  dialogueBubblePrefab: {fileID: 7400100000000000001, guid: 04655dae6d21cbb40bf62a655543b151, type: 3}
+  dialogueAnchorOffset: {x: -0.2, y: 0.06}
+  dialogueScale: 1
+  fitDialogueToView: 1
+  viewMargin: 0.04
 --- !u!1 &964833811 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8bbeb0dde9cd04ab38d63e16f75a3f4b, type: 3}
@@ -25151,9 +25224,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95c64e0778f40354b86ae41d86a125a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCInteractable
-  npcName: Elder
+  npcName: Mayor
   chatBubblePrefab: {fileID: 8118450732210544728, guid: 6eb2ca46f0da35e4c87e18c45bd6b1bf, type: 3}
-  bubblePadding: 0.3
+  promptAnchorOffset: {x: 0, y: 0.12}
+  promptTilt: 0.5
+  focusHeight: 0.75
+  dialogueText: 'HOOOWEEEE! Well butter me up and call me a biscuit, I reckon its been 14 moons since we''ve had a tourist! Of course you weren''t fixin'' to land here, but we''re happy as a clam at high water that you did! '
+  dialogueBubblePrefab: {fileID: 7400100000000000001, guid: 04655dae6d21cbb40bf62a655543b151, type: 3}
+  dialogueAnchorOffset: {x: -0.2, y: 0.06}
+  dialogueScale: 1
+  fitDialogueToView: 1
+  viewMargin: 0.04
 --- !u!1 &1140312270 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3924390359808885084, guid: 8bbeb0dde9cd04ab38d63e16f75a3f4b, type: 3}
@@ -35934,15 +36015,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ee572d98d4ab44bd4b991d41a7215020, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 53.18505
+      value: 53.658
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ee572d98d4ab44bd4b991d41a7215020, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.359
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ee572d98d4ab44bd4b991d41a7215020, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.8929853
+      value: 5.212
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ee572d98d4ab44bd4b991d41a7215020, type: 3}
       propertyPath: m_LocalRotation.w
@@ -36030,9 +36111,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95c64e0778f40354b86ae41d86a125a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCInteractable
-  npcName: Outlaw
+  npcName: Tubby the Kid
   chatBubblePrefab: {fileID: 8118450732210544728, guid: 6eb2ca46f0da35e4c87e18c45bd6b1bf, type: 3}
-  bubblePadding: 0.3
+  promptAnchorOffset: {x: 0, y: 0.12}
+  promptTilt: 0.5
+  focusHeight: 0.75
+  dialogueText: 'Whewww brother, I hear tell your ship got pretty boogered up on the way down. Gonna be scrapin'' dimes together for years. Gotta tip on this little saucer for you Buckaroo - quick as a whip and completely free, if you''re ready to work for it... '
+  dialogueBubblePrefab: {fileID: 7400100000000000001, guid: 04655dae6d21cbb40bf62a655543b151, type: 3}
+  dialogueAnchorOffset: {x: -0.2, y: 0.06}
+  dialogueScale: 1
+  fitDialogueToView: 1
+  viewMargin: 0.04
 --- !u!1001 &1563626390
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41090,9 +41179,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95c64e0778f40354b86ae41d86a125a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCInteractable
-  npcName: Dandy
+  npcName: Blaster-smith
   chatBubblePrefab: {fileID: 8118450732210544728, guid: 6eb2ca46f0da35e4c87e18c45bd6b1bf, type: 3}
-  bubblePadding: 0.3
+  promptAnchorOffset: {x: 0, y: 0.12}
+  promptTilt: 0.5
+  focusHeight: 0.75
+  dialogueText: 'There''s only two types of folks on these moons - the one with the bigger shootin'' iron, and the one who''s dead. I''d ask you what typa Cowpoke you are, but I reckon we both know the answer. '
+  dialogueBubblePrefab: {fileID: 7400100000000000001, guid: 04655dae6d21cbb40bf62a655543b151, type: 3}
+  dialogueAnchorOffset: {x: -0.2, y: 0.06}
+  dialogueScale: 1
+  fitDialogueToView: 1
+  viewMargin: 0.04
 --- !u!1 &1812563251 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8bbeb0dde9cd04ab38d63e16f75a3f4b, type: 3}
@@ -47573,9 +47670,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95c64e0778f40354b86ae41d86a125a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCInteractable
-  npcName: Poncho
+  npcName: Hubert
   chatBubblePrefab: {fileID: 8118450732210544728, guid: 6eb2ca46f0da35e4c87e18c45bd6b1bf, type: 3}
-  bubblePadding: 0.3
+  promptAnchorOffset: {x: 0, y: 0.12}
+  promptTilt: 0.5
+  focusHeight: 0.75
+  dialogueText: ...mammas, don't let your babies grow up to be cowboys... \n...don't let em pick guitars and drive them ole trucks...
+  dialogueBubblePrefab: {fileID: 7400100000000000001, guid: 04655dae6d21cbb40bf62a655543b151, type: 3}
+  dialogueAnchorOffset: {x: -0.2, y: 0.06}
+  dialogueScale: 1
+  fitDialogueToView: 1
+  viewMargin: 0.04
 --- !u!1 &2010274712 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8bbeb0dde9cd04ab38d63e16f75a3f4b, type: 3}
@@ -49238,9 +49343,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95c64e0778f40354b86ae41d86a125a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCInteractable
-  npcName: Farmer
+  npcName: Big Country
   chatBubblePrefab: {fileID: 8118450732210544728, guid: 6eb2ca46f0da35e4c87e18c45bd6b1bf, type: 3}
-  bubblePadding: 0.3
+  promptAnchorOffset: {x: 0, y: 0.12}
+  promptTilt: 0.5
+  focusHeight: 0.75
+  dialogueText: 'As I live and breath, yer missin'' a couple of peepers there aren''t ya fella? I''m fixin up some grub that''ll put yer mamma''s to shame if yer short on chow too! '
+  dialogueBubblePrefab: {fileID: 7400100000000000001, guid: 04655dae6d21cbb40bf62a655543b151, type: 3}
+  dialogueAnchorOffset: {x: -0.2, y: 0.06}
+  dialogueScale: 1
+  fitDialogueToView: 1
+  viewMargin: 0.04
 --- !u!1 &2091052756 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b9c2b9934c4fe45158b288b584960f32, type: 3}
@@ -51569,7 +51682,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPCInteractable
   npcName: Prospector
   chatBubblePrefab: {fileID: 8118450732210544728, guid: 6eb2ca46f0da35e4c87e18c45bd6b1bf, type: 3}
-  bubblePadding: 0.3
+  promptAnchorOffset: {x: 0, y: 0.12}
+  promptTilt: 0.5
+  focusHeight: 0.75
+  dialogueText: 'Howdy partner! My apologies if the locals come off a little frosty - I''d reckon they ain''t used to seein'' a cyclops fall out the sky! Livin down in the caves leaves you a little less green in the gills. '
+  dialogueBubblePrefab: {fileID: 7400100000000000001, guid: 04655dae6d21cbb40bf62a655543b151, type: 3}
+  dialogueAnchorOffset: {x: -0.2, y: 0.06}
+  dialogueScale: 1
+  fitDialogueToView: 1
+  viewMargin: 0.04
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
