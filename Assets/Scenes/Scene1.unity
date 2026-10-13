@@ -3570,6 +3570,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ba8726d8104d54d5899bdab8bbcb19c1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 175971381}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ba8726d8104d54d5899bdab8bbcb19c1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 175971382}
   m_SourcePrefab: {fileID: 100100000, guid: ba8726d8104d54d5899bdab8bbcb19c1, type: 3}
 --- !u!4 &175971379 stripped
 Transform:
@@ -3602,6 +3605,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 4, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &175971382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175971380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95c64e0778f40354b86ae41d86a125a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCInteractable
+  npcName: Shopkeeper
+  chatBubblePrefab: {fileID: 8118450732210544728, guid: 6eb2ca46f0da35e4c87e18c45bd6b1bf, type: 3}
+  bubblePadding: 0.3
 --- !u!1 &178830277 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8bbeb0dde9cd04ab38d63e16f75a3f4b, type: 3}
@@ -5831,6 +5849,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ebfc628c4ec4e4014848ccf8941faf2e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 329020560}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ebfc628c4ec4e4014848ccf8941faf2e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 329020561}
   m_SourcePrefab: {fileID: 100100000, guid: ebfc628c4ec4e4014848ccf8941faf2e, type: 3}
 --- !u!4 &329020558 stripped
 Transform:
@@ -5863,6 +5884,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 4, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &329020561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329020559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95c64e0778f40354b86ae41d86a125a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCInteractable
+  npcName: Kid
+  chatBubblePrefab: {fileID: 8118450732210544728, guid: 6eb2ca46f0da35e4c87e18c45bd6b1bf, type: 3}
+  bubblePadding: 0.3
 --- !u!1001 &329219889
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6174,6 +6210,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 003c5dea012154b578bab5b4df230a71, type: 3}
       insertIndex: -1
       addedObject: {fileID: 331615809}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 003c5dea012154b578bab5b4df230a71, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 331615810}
   m_SourcePrefab: {fileID: 100100000, guid: 003c5dea012154b578bab5b4df230a71, type: 3}
 --- !u!4 &331615807 stripped
 Transform:
@@ -6206,6 +6245,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 4, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &331615810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331615808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95c64e0778f40354b86ae41d86a125a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCInteractable
+  npcName: Banker
+  chatBubblePrefab: {fileID: 8118450732210544728, guid: 6eb2ca46f0da35e4c87e18c45bd6b1bf, type: 3}
+  bubblePadding: 0.3
 --- !u!1 &332183301 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8bbeb0dde9cd04ab38d63e16f75a3f4b, type: 3}
@@ -9407,6 +9461,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a53c4dd6531b0471ca3a31d357f2c918, type: 3}
       insertIndex: -1
       addedObject: {fileID: 464209633}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a53c4dd6531b0471ca3a31d357f2c918, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 464209634}
   m_SourcePrefab: {fileID: 100100000, guid: a53c4dd6531b0471ca3a31d357f2c918, type: 3}
 --- !u!4 &464209631 stripped
 Transform:
@@ -9439,6 +9496,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 4, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &464209634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464209632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95c64e0778f40354b86ae41d86a125a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCInteractable
+  npcName: Bartender
+  chatBubblePrefab: {fileID: 8118450732210544728, guid: 6eb2ca46f0da35e4c87e18c45bd6b1bf, type: 3}
+  bubblePadding: 0.3
 --- !u!1 &466701980 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8bbeb0dde9cd04ab38d63e16f75a3f4b, type: 3}
@@ -10687,6 +10759,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: db49342c08c3e46f99d41b183cdfe497, type: 3}
       insertIndex: -1
       addedObject: {fileID: 507092592}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: db49342c08c3e46f99d41b183cdfe497, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 507092593}
   m_SourcePrefab: {fileID: 100100000, guid: db49342c08c3e46f99d41b183cdfe497, type: 3}
 --- !u!4 &507092590 stripped
 Transform:
@@ -10719,6 +10794,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 4, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &507092593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507092591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95c64e0778f40354b86ae41d86a125a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCInteractable
+  npcName: Sheriff
+  chatBubblePrefab: {fileID: 8118450732210544728, guid: 6eb2ca46f0da35e4c87e18c45bd6b1bf, type: 3}
+  bubblePadding: 0.3
 --- !u!1 &510356046 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3924390359808885084, guid: 8bbeb0dde9cd04ab38d63e16f75a3f4b, type: 3}
@@ -16121,6 +16211,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 84fded65b615b4e62aa12a897964c548, type: 3}
   m_PrefabInstance: {fileID: 1074255920}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &743292159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 743292155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71592b393545e934888ae06f0eb55e49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerInteract
+  interactAction:
+    m_Name: Interact
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 1ed3275a-8c17-4dc9-8274-69899ca047d4
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 186f139b-3130-45de-bfe1-b7b04604dd77
+      m_Path: <Keyboard>/#(F)
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Interact
+      m_Flags: 0
+    m_Flags: 0
+    m_Priority: 0
+  interactRange: 5
 --- !u!1001 &743421995
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21453,6 +21574,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2f47d2ce6734f420b8a326c2c211afb2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 964382944}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2f47d2ce6734f420b8a326c2c211afb2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 964382945}
   m_SourcePrefab: {fileID: 100100000, guid: 2f47d2ce6734f420b8a326c2c211afb2, type: 3}
 --- !u!4 &964382942 stripped
 Transform:
@@ -21485,6 +21609,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 4, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &964382945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964382943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95c64e0778f40354b86ae41d86a125a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCInteractable
+  npcName: Townie
+  chatBubblePrefab: {fileID: 8118450732210544728, guid: 6eb2ca46f0da35e4c87e18c45bd6b1bf, type: 3}
+  bubblePadding: 0.3
 --- !u!1 &964833811 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8bbeb0dde9cd04ab38d63e16f75a3f4b, type: 3}
@@ -23843,6 +23982,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 84fded65b615b4e62aa12a897964c548, type: 3}
       insertIndex: -1
       addedObject: {fileID: 743292156}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 84fded65b615b4e62aa12a897964c548, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 743292159}
   m_SourcePrefab: {fileID: 100100000, guid: 84fded65b615b4e62aa12a897964c548, type: 3}
 --- !u!1 &1074331959 stripped
 GameObject:
@@ -24997,6 +25139,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 4, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1139858299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1139858296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95c64e0778f40354b86ae41d86a125a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCInteractable
+  npcName: Elder
+  chatBubblePrefab: {fileID: 8118450732210544728, guid: 6eb2ca46f0da35e4c87e18c45bd6b1bf, type: 3}
+  bubblePadding: 0.3
 --- !u!1 &1140312270 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3924390359808885084, guid: 8bbeb0dde9cd04ab38d63e16f75a3f4b, type: 3}
@@ -35826,6 +35983,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ee572d98d4ab44bd4b991d41a7215020, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1562792805}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ee572d98d4ab44bd4b991d41a7215020, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1562792806}
   m_SourcePrefab: {fileID: 100100000, guid: ee572d98d4ab44bd4b991d41a7215020, type: 3}
 --- !u!4 &1562792803 stripped
 Transform:
@@ -35858,6 +36018,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 4, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1562792806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562792804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95c64e0778f40354b86ae41d86a125a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCInteractable
+  npcName: Outlaw
+  chatBubblePrefab: {fileID: 8118450732210544728, guid: 6eb2ca46f0da35e4c87e18c45bd6b1bf, type: 3}
+  bubblePadding: 0.3
 --- !u!1001 &1563626390
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36375,6 +36550,85 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 8565717228650164704, guid: 1302b5f2556ed4919963f512fe96ca52, type: 3}
+--- !u!1 &1589126771
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1589126774}
+  - component: {fileID: 1589126773}
+  - component: {fileID: 1589126772}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1589126772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589126771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.UI.InputSystemUIInputModule
+  m_SendPointerHoverToParent: 1
+  m_MoveRepeatDelay: 0.5
+  m_MoveRepeatRate: 0.1
+  m_XRTrackingOrigin: {fileID: 0}
+  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_PointAction: {fileID: -1654692200621890270, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_MoveAction: {fileID: -8784545083839296357, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_SubmitAction: {fileID: 392368643174621059, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_CancelAction: {fileID: 7727032971491509709, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_LeftClickAction: {fileID: 3001919216989983466, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_MiddleClickAction: {fileID: -2185481485913320682, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_RightClickAction: {fileID: -4090225696740746782, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_ScrollWheelAction: {fileID: 6240969308177333660, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_TrackedDevicePositionAction: {fileID: 6564999863303420839, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_DeselectOnBackgroundClick: 1
+  m_PointerBehavior: 0
+  m_CursorLockBehavior: 0
+  m_ScrollDeltaPerTick: 6
+--- !u!114 &1589126773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589126771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventSystem
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1589126774
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589126771}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1589172524
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38854,6 +39108,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3942e81f275bf431fbca2416df59eaf9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1139858298}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3942e81f275bf431fbca2416df59eaf9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1139858299}
   m_SourcePrefab: {fileID: 100100000, guid: 3942e81f275bf431fbca2416df59eaf9, type: 3}
 --- !u!1 &1705413986 stripped
 GameObject:
@@ -40786,6 +41043,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e6970a2bc16f347ea90dcac96305b08a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1810063677}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e6970a2bc16f347ea90dcac96305b08a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1810063678}
   m_SourcePrefab: {fileID: 100100000, guid: e6970a2bc16f347ea90dcac96305b08a, type: 3}
 --- !u!4 &1810063675 stripped
 Transform:
@@ -40818,6 +41078,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 4, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1810063678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810063676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95c64e0778f40354b86ae41d86a125a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCInteractable
+  npcName: Dandy
+  chatBubblePrefab: {fileID: 8118450732210544728, guid: 6eb2ca46f0da35e4c87e18c45bd6b1bf, type: 3}
+  bubblePadding: 0.3
 --- !u!1 &1812563251 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8bbeb0dde9cd04ab38d63e16f75a3f4b, type: 3}
@@ -47251,6 +47526,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: eef09ad1d731345d799b5159d23c2c57, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2007976938}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: eef09ad1d731345d799b5159d23c2c57, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2007976939}
   m_SourcePrefab: {fileID: 100100000, guid: eef09ad1d731345d799b5159d23c2c57, type: 3}
 --- !u!4 &2007976936 stripped
 Transform:
@@ -47283,6 +47561,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 4, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2007976939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007976937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95c64e0778f40354b86ae41d86a125a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCInteractable
+  npcName: Poncho
+  chatBubblePrefab: {fileID: 8118450732210544728, guid: 6eb2ca46f0da35e4c87e18c45bd6b1bf, type: 3}
+  bubblePadding: 0.3
 --- !u!1 &2010274712 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8bbeb0dde9cd04ab38d63e16f75a3f4b, type: 3}
@@ -48898,6 +49191,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 97864b62c755c4361a17b46961ea5d60, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2085524776}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 97864b62c755c4361a17b46961ea5d60, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2085524777}
   m_SourcePrefab: {fileID: 100100000, guid: 97864b62c755c4361a17b46961ea5d60, type: 3}
 --- !u!4 &2085524774 stripped
 Transform:
@@ -48930,6 +49226,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 4, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2085524777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2085524775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95c64e0778f40354b86ae41d86a125a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCInteractable
+  npcName: Farmer
+  chatBubblePrefab: {fileID: 8118450732210544728, guid: 6eb2ca46f0da35e4c87e18c45bd6b1bf, type: 3}
+  bubblePadding: 0.3
 --- !u!1 &2091052756 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b9c2b9934c4fe45158b288b584960f32, type: 3}
@@ -51209,6 +51520,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bbd2bd27ccc2b4769850a17e3dadfa74, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2146322630}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bbd2bd27ccc2b4769850a17e3dadfa74, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2146322631}
   m_SourcePrefab: {fileID: 100100000, guid: bbd2bd27ccc2b4769850a17e3dadfa74, type: 3}
 --- !u!4 &2146322628 stripped
 Transform:
@@ -51241,6 +51555,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 4, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2146322631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146322629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95c64e0778f40354b86ae41d86a125a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCInteractable
+  npcName: Prospector
+  chatBubblePrefab: {fileID: 8118450732210544728, guid: 6eb2ca46f0da35e4c87e18c45bd6b1bf, type: 3}
+  bubblePadding: 0.3
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -51263,3 +51592,4 @@ SceneRoots:
   - {fileID: 1909603981}
   - {fileID: 1461031593}
   - {fileID: 521113426}
+  - {fileID: 1589126774}
