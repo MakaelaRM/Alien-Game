@@ -12,8 +12,8 @@ public static class TownHUDBuilder
 
     private static readonly Color PanelColor  = new Color(0f, 0f, 0f, 0.6f);
     private static readonly Color TrackColor  = new Color(0f, 0f, 0f, 0.7f);
-    private static readonly Color FillColor   = new Color(1f, 0.76f, 0.22f, 1f);
-    private static readonly Color BadgeRim    = new Color(1f, 0.76f, 0.22f, 1f);
+    private static readonly Color FillColor   = new Color32(100, 255, 50, 255);
+    private static readonly Color BadgeRim    = new Color32(100, 255, 50, 255);
     private static readonly Color BadgeCenter = new Color(0.08f, 0.08f, 0.08f, 1f);
 
     // Placeholder icon colors until real sprites are dropped in
@@ -28,7 +28,6 @@ public static class TownHUDBuilder
         Sprite circle  = AssetDatabase.GetBuiltinExtraResource<Sprite>("UI/Skin/Knob.psd");
         TMP_FontAsset font = FindFont("kleader");
 
-        // ---- Root: screen-space overlay canvas ----
         var root = new GameObject("TownHUD", typeof(RectTransform), typeof(Canvas),
                                   typeof(CanvasScaler), typeof(CanvasGroup));
         Undo.RegisterCreatedObjectUndo(root, "Create Town HUD");
@@ -46,7 +45,6 @@ public static class TownHUDBuilder
         group.interactable = false;
         group.blocksRaycasts = false;
 
-        // ---- Top left: money / food / drinks ----
         RectTransform stats = CreateRect("Stats", root.transform);
         PinToCorner(stats, new Vector2(0f, 1f), new Vector2(Margin, -Margin));
         Style(stats.gameObject.AddComponent<Image>(), rounded, PanelColor);
@@ -60,16 +58,14 @@ public static class TownHUDBuilder
         fit.horizontalFit = ContentSizeFitter.FitMode.PreferredSize;
         fit.verticalFit = ContentSizeFitter.FitMode.PreferredSize;
 
-        TextMeshProUGUI moneyText  = CreateStat(stats, "Money",  circle, MoneyTint,  font);
-        TextMeshProUGUI foodText   = CreateStat(stats, "Food",   circle, FoodTint,   font);
-        TextMeshProUGUI drinksText = CreateStat(stats, "Drinks", circle, DrinksTint, font);
+        TextMeshProUGUI moneyText  = CreateStat(stats, "Money",  LoadIcon("Icon_Money"),  circle, MoneyTint,  font);
+        TextMeshProUGUI foodText   = CreateStat(stats, "Food",   LoadIcon("Icon_Food"),   circle, FoodTint,   font);
+        TextMeshProUGUI drinksText = CreateStat(stats, "Drinks", LoadIcon("Icon_Drinks"), circle, DrinksTint, font);
 
-        // ---- Top right: reputation bar ----
         const float barHeight = 40f;
         const float badgeSize = 64f;
 
         RectTransform rep = CreateRect("Reputation", root.transform);
-        // Drop it a little so the level badge (taller than the bar) doesn't touch the screen edge
         PinToCorner(rep, new Vector2(1f, 1f), new Vector2(-Margin, -Margin - (badgeSize - barHeight) * 0.5f));
         rep.sizeDelta = new Vector2(440f, barHeight);
 
@@ -77,13 +73,12 @@ public static class TownHUDBuilder
         Stretch(track, 0f, 0f, 0f, 0f);
         Style(track.gameObject.AddComponent<Image>(), rounded, TrackColor);
 
-        // Fill starts just right of the badge so the badge covers the bar's left end
         RectTransform fillArea = CreateRect("FillArea", track);
         Stretch(fillArea, badgeSize * 0.5f + 4f, 6f, 6f, 6f);
 
         RectTransform fill = CreateRect("Fill", fillArea);
         fill.anchorMin = Vector2.zero;
-        fill.anchorMax = new Vector2(0.35f, 1f); // preview only; TownHUD drives this at runtime
+        fill.anchorMax = new Vector2(0.35f, 1f);
         fill.offsetMin = Vector2.zero;
         fill.offsetMax = Vector2.zero;
         Style(fill.gameObject.AddComponent<Image>(), rounded, FillColor);
@@ -102,7 +97,6 @@ public static class TownHUDBuilder
         TextMeshProUGUI levelText = CreateText("LevelText", badge, font, 32f, TextAlignmentOptions.Center);
         Stretch(levelText.rectTransform, 0f, 0f, 0f, 0f);
 
-        // ---- Wire up the TownHUD component ----
         var hud = root.AddComponent<TownHUD>();
         var so = new SerializedObject(hud);
         so.FindProperty("moneyText").objectReferenceValue = moneyText;
@@ -118,11 +112,26 @@ public static class TownHUDBuilder
         Debug.Log("Town HUD created. Drag your icon sprites onto Stats > MoneyIcon, FoodIcon and DrinksIcon.", root);
     }
 
-    // ---------------------------------------------------------------------------------------------
+    private const string IconFolder = "Assets/UI/Icons/";
 
-    private static TextMeshProUGUI CreateStat(Transform parent, string label, Sprite placeholder,
-                                              Color tint, TMP_FontAsset font)
+    private static Sprite LoadIcon(string name)
     {
+        Sprite sprite = AssetDatabase.LoadAssetAtPath<Sprite>(IconFolder + name + ".png");
+        if (sprite == null)
+            Debug.LogWarning("Couldn't find a sprite at " + IconFolder + name + ".png, using a placeholder. " +
+                             "Make sure its Texture Type is Sprite (2D and UI).");
+        return sprite;
+    }
+
+    private static TextMeshProUGUI CreateStat(Transform parent, string label, Sprite iconSprite,
+                                              Sprite placeholder, Color tint, TMP_FontAsset font)
+    {
+        if (iconSprite != null)
+        {
+            placeholder = iconSprite;
+            tint = Color.white;
+        }
+
         RectTransform entry = CreateRect(label, parent);
         var layout = entry.gameObject.AddComponent<HorizontalLayoutGroup>();
         layout.spacing = 10f;
@@ -138,7 +147,7 @@ public static class TownHUDBuilder
 
         TextMeshProUGUI text = CreateText(label + "Text", entry, font, 36f, TextAlignmentOptions.MidlineLeft);
         var textSize = text.gameObject.AddComponent<LayoutElement>();
-        textSize.minWidth = 48f; // stops the row jumping around when a number gains a digit
+        textSize.minWidth = 48f;
         return text;
     }
 
@@ -209,7 +218,6 @@ public static class TownHUDBuilder
         return TMP_Settings.defaultFontAsset;
     }
 
-    // Adds PlayerStats to the player if the scene doesn't have one yet
     private static void EnsurePlayerStats()
     {
         if (Object.FindFirstObjectByType<PlayerStats>() != null) return;
