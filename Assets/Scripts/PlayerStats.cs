@@ -8,8 +8,8 @@ public class PlayerStats : MonoBehaviour
 
     [Header("Starting Values")]
     [SerializeField, Min(0)] private int money = 0;
-    [SerializeField, Min(0)] private int food = 0;   // health
-    [SerializeField, Min(0)] private int drinks = 0;   // shield
+    [SerializeField, Min(0)] private int food = 100;   
+    [SerializeField, Min(0)] private int drinks = 0;   
 
     [Header("Reputation")]
     [Tooltip("Reputation points needed to go from level 0 to level 1.")]
@@ -18,7 +18,8 @@ public class PlayerStats : MonoBehaviour
     [SerializeField, Min(0)] private int extraPerLevel = 25;
 
     private int reputationLevel;
-    private int reputationPoints;
+    private int reputationPoints; 
+    private int totalReputation;  
 
     public event Action Changed;
 
@@ -28,7 +29,7 @@ public class PlayerStats : MonoBehaviour
     public int ReputationLevel => reputationLevel;
     public int ReputationPoints => reputationPoints;
     public int PointsToNextLevel => reputationPerLevel + extraPerLevel * reputationLevel;
-
+    public int TotalReputation => totalReputation;
     public float ReputationProgress => (float)reputationPoints / PointsToNextLevel;
 
     void Awake()
@@ -52,6 +53,7 @@ public class PlayerStats : MonoBehaviour
         if (points == 0) return;
 
         reputationPoints += points;
+        totalReputation += points;
 
         while (reputationPoints >= PointsToNextLevel)
         {
@@ -59,7 +61,11 @@ public class PlayerStats : MonoBehaviour
             reputationLevel++;
         }
 
-        if (reputationPoints < 0) reputationPoints = 0;
+        if (reputationPoints < 0)
+        {
+            totalReputation -= reputationPoints;
+            reputationPoints = 0;
+        }
 
         Changed?.Invoke();
     }

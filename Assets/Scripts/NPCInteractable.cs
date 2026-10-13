@@ -34,7 +34,21 @@ public class NPCInteractable : MonoBehaviour
     [Tooltip("Only give the rewards the first time the player talks to this NPC.")]
     [SerializeField] private bool rewardOnlyOnce = true;
 
+    [Header("Return Visit (optional)")]
+    [SerializeField, TextArea(2, 5)] private string returnDialogueText;
+    [SerializeField] private int returnMoneyReward;
+    [SerializeField] private int returnFoodReward;
+    [SerializeField] private int returnDrinksReward;
+    [SerializeField] private int returnReputationReward;
+    [SerializeField] private bool returnRewardOnlyOnce = true;
+
+    [Header("Hide While Interacting (optional)")]
+    [SerializeField] private Renderer[] hideWhileInteracting;
+
     private bool rewardGiven;
+    private bool returnRewardGiven;
+    private bool hasVisited;
+    private bool onReturnVisit;
 
     private SpeechBubble3D promptBubble;
     private SpeechBubble3D dialogueBubble;
@@ -62,7 +76,6 @@ public class NPCInteractable : MonoBehaviour
         if (string.IsNullOrEmpty(npcName))
             npcName = gameObject.name;
 
-        // Measure the model before the bubbles are added, so they don't count toward its height
         modelHeight = GetTopOfModel() - transform.position.y;
 
         promptBubble = SpawnBubble(chatBubblePrefab, "Chat Bubble Prefab", out promptBaseScale);
@@ -87,7 +100,7 @@ public class NPCInteractable : MonoBehaviour
             return null;
         }
 
-        baseScale = prefab.transform.localScale.x; // lets you resize every bubble by scaling the prefab root
+        baseScale = prefab.transform.localScale.x; 
         bubble.HideImmediate();
         return bubble;
     }
@@ -100,10 +113,6 @@ public class NPCInteractable : MonoBehaviour
         return top;
     }
 
-    // ---------------------------------------------------------------------------------------------
-    // Name prompt
-    // ---------------------------------------------------------------------------------------------
-
     public void ShowPrompt(string keyName)
     {
         if (promptBubble == null) return;
@@ -113,7 +122,6 @@ public class NPCInteractable : MonoBehaviour
         Transform view = Camera.main != null ? Camera.main.transform : null;
         GetViewAxes(view, out Vector3 right, out Vector3 flatForward);
 
-        // Lean the bubble back partway toward the (raised) camera so it reads well but still looks 3D
         Vector3 facing = flatForward;
         if (view != null) facing = Vector3.Slerp(flatForward, view.forward, promptTilt).normalized;
 
@@ -127,16 +135,12 @@ public class NPCInteractable : MonoBehaviour
         if (promptBubble != null) promptBubble.Hide();
     }
 
-    // ---------------------------------------------------------------------------------------------
-    // Dialogue
-    // ---------------------------------------------------------------------------------------------
-
-    /// Shows the dialogue bubble above the NPC's head, facing the given viewer (the camera).
     public void ShowDialogue(string exitKeyName, Transform viewer)
     {
         if (dialogueBubble == null) return;
 
-        dialogueBubble.SetContent(dialogueText, "Press " + dialogueBubble.HighlightKey(exitKeyName) + " to escape");
+        string text = onReturnVisit && !string.IsNullOrEmpty(returnDialogueText) ? returnDialogueText : dialogueText;
+        dialogueBubble.SetContent(text, "Press " + dialogueBubble.HighlightKey(exitKeyName) + " to escape");
 
         GetViewAxes(viewer, out Vector3 right, out Vector3 flatForward);
         Vector3 anchor = HeadTop + right * dialogueAnchorOffset.x + Vector3.up * dialogueAnchorOffset.y;
@@ -153,38 +157,54 @@ public class NPCInteractable : MonoBehaviour
     public void HideDialogue()
     {
         if (dialogueBubble != null) dialogueBubble.Hide();
+        SetHiddenRenderers(true);
     }
 
     public void Interact()
     {
         Debug.Log("Interacting with: " + npcName);
-        GiveRewards();
+        onReturnVisit = rewardOnlyOnce && hasVisited;
+        hasVisited = true;
+        SetHiddenRenderers(false);
+
+        if (onReturnVisit)
+        {
+            if (!(returnRewardOnlyOnce && returnRewardGiven) &&
+                GiveRewards(returnMoneyReward, returnFoodReward, returnDrinksReward, returnReputationReward))
+                returnRewardGiven = true;
+        }
+        else if (!(rewardOnlyOnce && rewardGiven) &&
+                 GiveRewards(moneyReward, foodReward, drinksReward, reputationReward))
+        {
+            rewardGiven = true;
+        }
     }
 
-    private void GiveRewards()
+    private void SetHiddenRenderers(bool visible)
     {
-        if (rewardOnlyOnce && rewardGiven) return;
-        if (moneyReward == 0 && foodReward == 0 && drinksReward == 0 && reputationReward == 0) return;
+        if (hideWhileInteracting == null) return;
+        foreach (Renderer r in hideWhileInteracting)
+            if (r != null) r.enabled = visible;
+    }
+
+    private bool GiveRewards(int money, int food, int drinks, int reputation)
+    {
+        if (money == 0 && food == 0 && drinks == 0 && reputation == 0) return false;
 
         PlayerStats stats = PlayerStats.Instance;
         if (stats == null)
         {
             Debug.LogWarning(npcName + " has rewards but there's no PlayerStats in the scene.", this);
-            return;
+            return false;
         }
 
-        stats.AddMoney(moneyReward);
-        stats.AddFood(foodReward);
-        stats.AddDrinks(drinksReward);
-        stats.AddReputation(reputationReward);
-        rewardGiven = true;
+        stats.AddMoney(money);
+        stats.AddFood(food);
+        stats.AddDrinks(drinks);
+        stats.AddReputation(reputation);
+        return true;
     }
 
-    // ---------------------------------------------------------------------------------------------
-    // Helpers
-    // ---------------------------------------------------------------------------------------------
-
-    // The camera's right and forward directions, flattened so bubbles stay upright.
     private static void GetViewAxes(Transform view, out Vector3 right, out Vector3 flatForward)
     {
         right = Vector3.right;
@@ -204,7 +224,6 @@ public class NPCInteractable : MonoBehaviour
         Transform t = bubble.transform;
         t.SetPositionAndRotation(position, rotation);
 
-        // Bubbles are children of the NPC, so cancel out the NPC's own scale
         Vector3 parentScale = t.parent != null ? t.parent.lossyScale : Vector3.one;
         t.localScale = new Vector3(
             worldScale / NonZero(parentScale.x),
@@ -214,8 +233,6 @@ public class NPCInteractable : MonoBehaviour
 
     private static float NonZero(float value) => Mathf.Abs(value) < 1e-5f ? 1f : value;
 
-    // Largest scale (up to 'desired') at which the whole bubble stays on screen. The bubble shrinks
-    // toward its tail tip, so it never pulls away from the NPC.
     private float FitScaleToView(Camera cam, Rect bounds, Vector3 anchor, Quaternion rotation, float desired)
     {
         if (!PointInView(cam, anchor, 0f)) return desired;
