@@ -25,6 +25,17 @@ public class NPCInteractable : MonoBehaviour
     [Tooltip("Gap to keep between the bubble and the screen edge, as a fraction of the screen.")]
     [SerializeField, Range(0f, 0.2f)] private float viewMargin = 0.04f;
 
+    [Header("Rewards (optional)")]
+    [Tooltip("Given when the player interacts. 0 = nothing. Negative takes away (e.g. paying for a meal).")]
+    [SerializeField] private int moneyReward;
+    [SerializeField] private int foodReward;
+    [SerializeField] private int drinksReward;
+    [SerializeField] private int reputationReward;
+    [Tooltip("Only give the rewards the first time the player talks to this NPC.")]
+    [SerializeField] private bool rewardOnlyOnce = true;
+
+    private bool rewardGiven;
+
     private SpeechBubble3D promptBubble;
     private SpeechBubble3D dialogueBubble;
     private float promptBaseScale = 1f;
@@ -147,6 +158,26 @@ public class NPCInteractable : MonoBehaviour
     public void Interact()
     {
         Debug.Log("Interacting with: " + npcName);
+        GiveRewards();
+    }
+
+    private void GiveRewards()
+    {
+        if (rewardOnlyOnce && rewardGiven) return;
+        if (moneyReward == 0 && foodReward == 0 && drinksReward == 0 && reputationReward == 0) return;
+
+        PlayerStats stats = PlayerStats.Instance;
+        if (stats == null)
+        {
+            Debug.LogWarning(npcName + " has rewards but there's no PlayerStats in the scene.", this);
+            return;
+        }
+
+        stats.AddMoney(moneyReward);
+        stats.AddFood(foodReward);
+        stats.AddDrinks(drinksReward);
+        stats.AddReputation(reputationReward);
+        rewardGiven = true;
     }
 
     // ---------------------------------------------------------------------------------------------
