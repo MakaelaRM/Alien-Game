@@ -3,16 +3,52 @@ using UnityEngine.InputSystem;
 
 public class PlayerInteract : MonoBehaviour
 {
-    [SerializeField] private InputAction interactAction;
+    [SerializeField] private InputAction interactAction = new InputAction("Interact", InputActionType.Button, "<Keyboard>/e");
+    [SerializeField] private InputAction exitAction = new InputAction("ExitInteract", InputActionType.Button, "<Keyboard>/escape");
     [SerializeField] private float interactRange = 5f;
+    [SerializeField] private FixedAngleCamera cameraController;
 
-    private NPCInteractable currentNPC;
+    private NPCInteractable currentNPC;      // NPC whose prompt is showing
+    private NPCInteractable interactingNPC;  // NPC we're currently interacting with
+    private bool dialogueShown;
 
-    void OnEnable()  => interactAction.Enable();
-    void OnDisable() => interactAction.Disable();
+    public bool IsInteracting => interactingNPC != null;
+
+    void Awake()
+    {
+        if (cameraController == null && Camera.main != null)
+            cameraController = Camera.main.GetComponent<FixedAngleCamera>();
+    }
+
+    void OnEnable()
+    {
+        interactAction.Enable();
+        exitAction.Enable();
+    }
+
+    void OnDisable()
+    {
+        interactAction.Disable();
+        exitAction.Disable();
+    }
 
     void Update()
     {
+        if (IsInteracting)
+        {
+            // Show the dialogue once the camera has finished zooming in
+            if (!dialogueShown && (cameraController == null || cameraController.IsFocusComplete))
+            {
+                Transform viewer = cameraController != null ? cameraController.transform : Camera.main.transform;
+                interactingNPC.ShowDialogue(exitAction.GetBindingDisplayString(), viewer);
+                dialogueShown = true;
+            }
+
+            if (exitAction.WasPressedThisFrame())
+                EndInteraction();
+            return; // skip prompt logic so no name bubbles appear during the interaction
+        }
+
         NPCInteractable closest = FindClosestNPC();
 
         if (closest != currentNPC)
@@ -24,8 +60,30 @@ public class PlayerInteract : MonoBehaviour
 
         if (currentNPC != null && interactAction.WasPressedThisFrame())
         {
-            currentNPC.Interact();
+            StartInteraction(currentNPC);
         }
+    }
+
+    private void StartInteraction(NPCInteractable npc)
+    {
+        interactingNPC = npc;
+        dialogueShown = false;
+        npc.HidePrompt();
+        npc.Interact();
+
+        if (cameraController != null)
+            cameraController.FocusOn(npc.transform, npc.FocusPoint);
+    }
+
+    private void EndInteraction()
+    {
+        interactingNPC.HideDialogue();
+        interactingNPC = null;
+        currentNPC = null; // forces the prompt to be re-checked next frame
+        dialogueShown = false;
+
+        if (cameraController != null)
+            cameraController.StopFocus();
     }
 
     private NPCInteractable FindClosestNPC()
