@@ -3720,6 +3720,29 @@ MonoBehaviour:
   returnDrinksReward: 0
   returnReputationReward: -5
   returnRewardOnlyOnce: 0
+  hasShop: 1
+  shopMinReputation: 1
+  shopTitle: Corvax's Chicken
+  shopItems:
+  - itemName: 'Just the Bird '
+    cost: 24
+    effects:
+    - stat: 0
+      amount: 6
+  - itemName: '2 PC '
+    cost: 10
+    effects:
+    - stat: 0
+      amount: 2
+    - stat: 1
+      amount: 1
+  - itemName: '3 PC '
+    cost: 14
+    effects:
+    - stat: 0
+      amount: 3
+    - stat: 1
+      amount: 1
   hideWhileInteracting: []
 --- !u!82 &175971383
 AudioSource:
@@ -6160,6 +6183,10 @@ MonoBehaviour:
   returnDrinksReward: 0
   returnReputationReward: 0
   returnRewardOnlyOnce: 1
+  hasShop: 0
+  shopMinReputation: 1
+  shopTitle: 
+  shopItems: []
   hideWhileInteracting: []
 --- !u!82 &329020562
 AudioSource:
@@ -6742,6 +6769,10 @@ MonoBehaviour:
   returnDrinksReward: 0
   returnReputationReward: -15
   returnRewardOnlyOnce: 0
+  hasShop: 0
+  shopMinReputation: 1
+  shopTitle: 
+  shopItems: []
   hideWhileInteracting: []
 --- !u!82 &331615811
 AudioSource:
@@ -10183,6 +10214,25 @@ MonoBehaviour:
   returnDrinksReward: 0
   returnReputationReward: -5
   returnRewardOnlyOnce: 0
+  hasShop: 1
+  shopMinReputation: 2
+  shopTitle: Slartibartfast's Saloon
+  shopItems:
+  - itemName: A Beer or Two
+    cost: 10
+    effects:
+    - stat: 1
+      amount: 4
+  - itemName: Coupla Beers
+    cost: 20
+    effects:
+    - stat: 1
+      amount: 10
+  - itemName: Helluva Lotta Beers
+    cost: 30
+    effects:
+    - stat: 1
+      amount: 20
   hideWhileInteracting: []
 --- !u!82 &464209635
 AudioSource:
@@ -11602,6 +11652,10 @@ MonoBehaviour:
   returnDrinksReward: 0
   returnReputationReward: 0
   returnRewardOnlyOnce: 0
+  hasShop: 0
+  shopMinReputation: 1
+  shopTitle: 
+  shopItems: []
   hideWhileInteracting: []
 --- !u!82 &507092594
 AudioSource:
@@ -17429,26 +17483,29 @@ MonoBehaviour:
       m_Flags: 0
     m_Flags: 0
     m_Priority: 0
-  exitAction:
-    m_Name: ExitInteract
+  shopAction:
+    m_Name: OpenShop
     m_Type: 1
     m_ExpectedControlType: 
-    m_Id: d5b9edef-091d-4271-9676-2230d6fe935d
+    m_Id: d1f7ce75-95ba-4631-bb0d-247b224e7825
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings:
     - m_Name: 
-      m_Id: ab067d0c-81b1-4fe2-924e-5adb30f0269e
-      m_Path: <Keyboard>/escape
+      m_Id: 4c2cc460-e8b4-43cc-b634-df7ef1059e6c
+      m_Path: <Keyboard>/q
       m_Interactions: 
       m_Processors: 
       m_Groups: 
-      m_Action: ExitInteract
+      m_Action: OpenShop
       m_Flags: 0
     m_Flags: 0
     m_Priority: 0
   interactRange: 5
   cameraController: {fileID: 0}
+  shopMenu: {fileID: 0}
+  shopFocusDistance: 3
+  shopScreenX: 0.75
 --- !u!114 &743292160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17464,6 +17521,7 @@ MonoBehaviour:
   money: 0
   food: 0
   drinks: 0
+  reputationLevel: 0
   reputationPerLevel: 100
   extraPerLevel: 25
 --- !u!82 &743292161
@@ -23194,6 +23252,10 @@ MonoBehaviour:
   returnDrinksReward: 0
   returnReputationReward: 0
   returnRewardOnlyOnce: 0
+  hasShop: 0
+  shopMinReputation: 1
+  shopTitle: 
+  shopItems: []
   hideWhileInteracting: []
 --- !u!82 &964382946
 AudioSource:
@@ -26851,6 +26913,10 @@ MonoBehaviour:
   returnDrinksReward: 0
   returnReputationReward: 0
   returnRewardOnlyOnce: 0
+  hasShop: 0
+  shopMinReputation: 1
+  shopTitle: 
+  shopItems: []
   hideWhileInteracting: []
 --- !u!82 &1139858300
 AudioSource:
@@ -38349,6 +38415,10 @@ MonoBehaviour:
   returnDrinksReward: 0
   returnReputationReward: 10
   returnRewardOnlyOnce: 1
+  hasShop: 0
+  shopMinReputation: 1
+  shopTitle: 
+  shopItems: []
   hideWhileInteracting:
   - {fileID: 458310739}
 --- !u!82 &1562792807
@@ -39592,6 +39662,81 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8bbeb0dde9cd04ab38d63e16f75a3f4b, type: 3}
   m_PrefabInstance: {fileID: 1780499741}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1619176807
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1619176809}
+  - component: {fileID: 1619176808}
+  m_Layer: 0
+  m_Name: ShopMenu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1619176808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619176807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e947c4e69f732584abbb7436733b21ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShopMenu
+  font: {fileID: 11400000, guid: f3ec503a311b4b447bf0946d3b1b74c9, type: 2}
+  coinIcon: {fileID: 4032765874156457707, guid: 4848ab1f0d2d16246aa31d0ac7d515e6, type: 3}
+  panelSprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  panelColor: {r: 0, g: 0, b: 0, a: 0.92}
+  textColor: {r: 1, g: 1, b: 1, a: 1}
+  statsColor: {r: 0.82, g: 0.8, b: 0.78, a: 1}
+  keyColor: {r: 0.96, g: 0.78, b: 0.42, a: 1}
+  costColor: {r: 1, g: 0.82, b: 0.2, a: 1}
+  canBuyColor: {r: 0.4, g: 1, b: 0.45, a: 1}
+  cannotBuyColor: {r: 1, g: 0.35, b: 0.3, a: 1}
+  nextPageAction:
+    m_Name: ShopNextPage
+    m_Type: 1
+    m_ExpectedControlType: 
+    m_Id: b9beffa1-6613-42ac-af7d-76eb026be143
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: ca4846ca-dd63-4c3f-9ad8-03b91ba81402
+      m_Path: <Keyboard>/tab
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: ShopNextPage
+      m_Flags: 0
+    m_Flags: 0
+    m_Priority: 0
+  openDuration: 0.25
+  slideDistance: 80
+  purchasedFlashTime: 0.8
+--- !u!4 &1619176809
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619176807}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -55.37085, y: 1.68594, z: 4.18181}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1620446528 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a3fcbb04a72d446f89193c4111c8fe3c, type: 3}
@@ -43632,6 +43777,10 @@ MonoBehaviour:
   returnDrinksReward: 0
   returnReputationReward: -10
   returnRewardOnlyOnce: 0
+  hasShop: 0
+  shopMinReputation: 1
+  shopTitle: 
+  shopItems: []
   hideWhileInteracting: []
 --- !u!82 &1810063679
 AudioSource:
@@ -50569,6 +50718,10 @@ MonoBehaviour:
   returnDrinksReward: 0
   returnReputationReward: 5
   returnRewardOnlyOnce: 0
+  hasShop: 0
+  shopMinReputation: 1
+  shopTitle: 
+  shopItems: []
   hideWhileInteracting: []
 --- !u!82 &2007976940
 AudioSource:
@@ -52355,6 +52508,10 @@ MonoBehaviour:
   returnDrinksReward: 0
   returnReputationReward: 10
   returnRewardOnlyOnce: 0
+  hasShop: 0
+  shopMinReputation: 1
+  shopTitle: 
+  shopItems: []
   hideWhileInteracting: []
 --- !u!82 &2085524778
 AudioSource:
@@ -54925,6 +55082,10 @@ MonoBehaviour:
   returnDrinksReward: 0
   returnReputationReward: 0
   returnRewardOnlyOnce: 0
+  hasShop: 0
+  shopMinReputation: 1
+  shopTitle: 
+  shopItems: []
   hideWhileInteracting: []
 --- !u!82 &2146322632
 AudioSource:
@@ -55047,3 +55208,4 @@ SceneRoots:
   - {fileID: 521113426}
   - {fileID: 1589126774}
   - {fileID: 685385391}
+  - {fileID: 1619176809}

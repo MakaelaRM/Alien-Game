@@ -1,5 +1,7 @@
+using System.Collections.Generic;
 using UnityEngine;
 
+/// An NPC the player can talk to, with optional rewards, return-visit dialogue and a shop.
 public class NPCInteractable : MonoBehaviour
 {
     [Header("Name Prompt")]
@@ -11,7 +13,7 @@ public class NPCInteractable : MonoBehaviour
     [SerializeField, Range(0f, 1f)] private float promptTilt = 0.5f;
 
     [Header("Camera Focus")]
-    [SerializeField, Range(0f, 1f)] private float focusHeight = 0.75f; // where the camera looks, as a fraction of model height
+    [SerializeField, Range(0f, 1f)] private float focusHeight = 0.75f;
 
     [Header("Dialogue")]
     [SerializeField, TextArea(2, 5)]
@@ -47,6 +49,15 @@ public class NPCInteractable : MonoBehaviour
     [SerializeField] private int returnReputationReward;
     [SerializeField] private bool returnRewardOnlyOnce = true;
 
+    [Header("Shop (optional)")]
+    [SerializeField] private bool hasShop;
+    [Tooltip("Reputation level the player needs before the shop option appears.")]
+    [SerializeField, Min(0)] private int shopMinReputation = 1;
+    [Tooltip("Shown at the top of the shop menu. Leave empty for \"<NPC Name>'s Shop\".")]
+    [SerializeField] private string shopTitle;
+    [Tooltip("Up to 4 items fit on a page; more items add extra pages.")]
+    [SerializeField] private List<ShopItem> shopItems = new List<ShopItem>();
+
     [Header("Hide While Interacting (optional)")]
     [SerializeField] private Renderer[] hideWhileInteracting;
     
@@ -63,8 +74,14 @@ public class NPCInteractable : MonoBehaviour
     private float dialogueBaseScale = 1f;
     private float modelHeight;
 
-    /// The point the camera looks at during an interaction (roughly face height).
     public Vector3 FocusPoint => transform.position + Vector3.up * (modelHeight * focusHeight);
+
+    public bool CanOpenShop =>
+        hasShop && PlayerStats.Instance != null && PlayerStats.Instance.ReputationLevel >= shopMinReputation;
+
+    public string ShopTitle => string.IsNullOrEmpty(shopTitle) ? npcName + "'s Shop" : shopTitle;
+
+    public IReadOnlyList<ShopItem> ShopItems => shopItems;
 
     private Vector3 HeadTop => transform.position + Vector3.up * modelHeight;
 
@@ -107,7 +124,7 @@ public class NPCInteractable : MonoBehaviour
             return null;
         }
 
-        baseScale = prefab.transform.localScale.x; 
+        baseScale = prefab.transform.localScale.x;
         bubble.HideImmediate();
         return bubble;
     }
@@ -120,11 +137,16 @@ public class NPCInteractable : MonoBehaviour
         return top;
     }
 
-    public void ShowPrompt(string keyName)
+    public void ShowPrompt(string keyName, string shopKeyName = null)
     {
         if (promptBubble == null) return;
 
-        promptBubble.SetContent(npcName, "Press " + promptBubble.HighlightKey(keyName) + " to interact");
+        string prompt = "Press " + promptBubble.HighlightKey(keyName) + " to interact";
+        if (CanOpenShop && !string.IsNullOrEmpty(shopKeyName))
+            prompt += ", " + promptBubble.HighlightKey(shopKeyName) + " to shop";
+        else if (hasShop)
+            prompt += ", can shop at " + promptBubble.HighlightLevel(shopMinReputation);
+        promptBubble.SetContent(npcName, prompt);
 
         Transform view = Camera.main != null ? Camera.main.transform : null;
         GetViewAxes(view, out Vector3 right, out Vector3 flatForward);
@@ -187,6 +209,16 @@ public class NPCInteractable : MonoBehaviour
         }
     }
 
+    public void EnterShop()
+    {
+        Debug.Log("Opening shop: " + npcName);
+        SetHiddenRenderers(false);
+    }
+
+    public void ExitShop()
+    {
+        SetHiddenRenderers(true);
+        
     public void playSoundOnInteract()
     {
         audioSource.PlayOneShot(dialogueAudio);

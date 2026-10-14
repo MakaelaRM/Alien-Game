@@ -8,8 +8,9 @@ public class PlayerStats : MonoBehaviour
 
     [Header("Starting Values")]
     [SerializeField, Min(0)] private int money = 0;
-    [SerializeField, Min(0)] private int food = 100;   
-    [SerializeField, Min(0)] private int drinks = 0;   
+    [SerializeField, Min(0)] private int food = 0;   
+    [SerializeField, Min(0)] private int drinks = 0;
+    [SerializeField, Min(0)] private int reputationLevel = 0;    
 
     [Header("Reputation")]
     [Tooltip("Reputation points needed to go from level 0 to level 1.")]
@@ -17,7 +18,6 @@ public class PlayerStats : MonoBehaviour
     [Tooltip("Extra points needed for each level after that. 0 = every level costs the same.")]
     [SerializeField, Min(0)] private int extraPerLevel = 25;
 
-    private int reputationLevel;
     private int reputationPoints; 
     private int totalReputation;  
 
