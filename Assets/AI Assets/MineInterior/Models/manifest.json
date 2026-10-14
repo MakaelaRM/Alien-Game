@@ -1,0 +1,668 @@
+{
+ "Mine_Wall_Rock_A": {
+  "triangles": 204,
+  "materials": [
+   "Mine_Rock_Side",
+   "Mine_Rock_SideAlt",
+   "Mine_Rock_Top",
+   "Mine_Rock_Under"
+  ],
+  "size": [
+   2.1,
+   4.4,
+   4.0
+  ],
+  "min": [
+   -1.7,
+   0.0,
+   0.0
+  ],
+  "max": [
+   0.4,
+   4.4,
+   4.0
+  ]
+ },
+ "Mine_Wall_Rock_B": {
+  "triangles": 204,
+  "materials": [
+   "Mine_Rock_Side",
+   "Mine_Rock_SideAlt",
+   "Mine_Rock_Top",
+   "Mine_Rock_Under"
+  ],
+  "size": [
+   2.14,
+   4.4,
+   4.0
+  ],
+  "min": [
+   -1.7,
+   0.0,
+   0.0
+  ],
+  "max": [
+   0.44,
+   4.4,
+   4.0
+  ]
+ },
+ "Mine_Wall_Rock_C": {
+  "triangles": 204,
+  "materials": [
+   "Mine_Rock_Side",
+   "Mine_Rock_SideAlt",
+   "Mine_Rock_Top",
+   "Mine_Rock_Under"
+  ],
+  "size": [
+   2.06,
+   4.4,
+   4.0
+  ],
+  "min": [
+   -1.7,
+   0.0,
+   0.0
+  ],
+  "max": [
+   0.36,
+   4.4,
+   4.0
+  ]
+ },
+ "Mine_Wall_Rock_Vein": {
+  "triangles": 540,
+  "materials": [
+   "Mine_CrystalCyan",
+   "Mine_CrystalTeal",
+   "Mine_Rock_Side",
+   "Mine_Rock_SideAlt",
+   "Mine_Rock_Top",
+   "Mine_Rock_Under"
+  ],
+  "size": [
+   2.96,
+   4.4,
+   4.0
+  ],
+  "min": [
+   -1.7,
+   0.0,
+   0.0
+  ],
+  "max": [
+   1.26,
+   4.4,
+   4.0
+  ]
+ },
+ "Mine_Ceiling_Rock_A": {
+  "triangles": 318,
+  "materials": [
+   "Mine_Rock_Side",
+   "Mine_Rock_SideAlt",
+   "Mine_Rock_Top",
+   "Mine_Rock_Under"
+  ],
+  "size": [
+   4.8,
+   2.59,
+   4.0
+  ],
+  "min": [
+   -2.4,
+   -1.19,
+   0.0
+  ],
+  "max": [
+   2.4,
+   1.4,
+   4.0
+  ]
+ },
+ "Mine_Ceiling_Rock_B": {
+  "triangles": 318,
+  "materials": [
+   "Mine_Rock_Side",
+   "Mine_Rock_SideAlt",
+   "Mine_Rock_Top",
+   "Mine_Rock_Under"
+  ],
+  "size": [
+   4.8,
+   2.6,
+   4.0
+  ],
+  "min": [
+   -2.4,
+   -1.2,
+   0.0
+  ],
+  "max": [
+   2.4,
+   1.4,
+   4.0
+  ]
+ },
+ "Mine_Ceiling_Rock_Crystals": {
+  "triangles": 558,
+  "materials": [
+   "Mine_CrystalCyan",
+   "Mine_CrystalTeal",
+   "Mine_Rock_Side",
+   "Mine_Rock_SideAlt",
+   "Mine_Rock_Top",
+   "Mine_Rock_Under"
+  ],
+  "size": [
+   4.8,
+   2.59,
+   4.0
+  ],
+  "min": [
+   -2.4,
+   -1.19,
+   0.0
+  ],
+  "max": [
+   2.4,
+   1.4,
+   4.0
+  ]
+ },
+ "Mine_Rock_Spire_A": {
+  "triangles": 164,
+  "materials": [
+   "Mine_Rock_Side",
+   "Mine_Rock_SideAlt",
+   "Mine_Rock_Top",
+   "Mine_Rock_Under"
+  ],
+  "size": [
+   2.93,
+   3.65,
+   2.66
+  ],
+  "min": [
+   -1.57,
+   -0.05,
+   -1.22
+  ],
+  "max": [
+   1.36,
+   3.6,
+   1.43
+  ]
+ },
+ "Mine_Rock_Spire_B": {
+  "triangles": 220,
+  "materials": [
+   "Mine_Rock_Side",
+   "Mine_Rock_SideAlt",
+   "Mine_Rock_Top",
+   "Mine_Rock_Under"
+  ],
+  "size": [
+   2.7,
+   2.46,
+   2.27
+  ],
+  "min": [
+   -1.32,
+   -0.06,
+   -1.05
+  ],
+  "max": [
+   1.38,
+   2.4,
+   1.22
+  ]
+ },
+ "Mine_Rock_Boulder_A": {
+  "triangles": 120,
+  "materials": [
+   "Mine_Rock_Side",
+   "Mine_Rock_SideAlt",
+   "Mine_Rock_Top",
+   "Mine_Rock_Under"
+  ],
+  "size": [
+   3.47,
+   1.01,
+   2.61
+  ],
+  "min": [
+   -1.64,
+   -0.06,
+   -1.37
+  ],
+  "max": [
+   1.83,
+   0.95,
+   1.24
+  ]
+ },
+ "Mine_Rock_Boulder_B": {
+  "triangles": 120,
+  "materials": [
+   "Mine_Rock_Side",
+   "Mine_Rock_SideAlt",
+   "Mine_Rock_Top",
+   "Mine_Rock_Under"
+  ],
+  "size": [
+   2.51,
+   0.76,
+   2.08
+  ],
+  "min": [
+   -1.2,
+   -0.06,
+   -1.09
+  ],
+  "max": [
+   1.32,
+   0.7,
+   0.99
+  ]
+ },
+ "Mine_Rock_Boulder_C": {
+  "triangles": 120,
+  "materials": [
+   "Mine_Rock_Side",
+   "Mine_Rock_SideAlt",
+   "Mine_Rock_Top",
+   "Mine_Rock_Under"
+  ],
+  "size": [
+   3.92,
+   1.26,
+   3.31
+  ],
+  "min": [
+   -1.69,
+   -0.06,
+   -1.71
+  ],
+  "max": [
+   2.23,
+   1.2,
+   1.6
+  ]
+ },
+ "Mine_Rock_Pillar": {
+  "triangles": 152,
+  "materials": [
+   "Mine_Rock_Side",
+   "Mine_Rock_SideAlt",
+   "Mine_Rock_Top",
+   "Mine_Rock_Under"
+  ],
+  "size": [
+   2.35,
+   4.49,
+   1.89
+  ],
+  "min": [
+   -1.14,
+   -0.06,
+   -1.0
+  ],
+  "max": [
+   1.22,
+   4.43,
+   0.89
+  ]
+ },
+ "Mine_Track_Straight_4m": {
+  "triangles": 168,
+  "materials": [
+   "Mine_RailSteel",
+   "Mine_Timber"
+  ],
+  "size": [
+   1.5,
+   0.23,
+   4.0
+  ],
+  "min": [
+   -0.75,
+   0.0,
+   0.0
+  ],
+  "max": [
+   0.75,
+   0.23,
+   4.0
+  ]
+ },
+ "Mine_Track_Curve_90": {
+  "triangles": 528,
+  "materials": [
+   "Mine_RailSteel",
+   "Mine_Timber"
+  ],
+  "size": [
+   4.77,
+   0.23,
+   4.77
+  ],
+  "min": [
+   -0.74,
+   0.0,
+   -0.03
+  ],
+  "max": [
+   4.03,
+   0.23,
+   4.74
+  ]
+ },
+ "Mine_Cart": {
+  "triangles": 316,
+  "materials": [
+   "Mine_Dark",
+   "Mine_Iron",
+   "Mine_IronDark",
+   "Mine_RailSteel"
+  ],
+  "size": [
+   1.25,
+   1.0,
+   2.15
+  ],
+  "min": [
+   -0.62,
+   0.22,
+   -1.07
+  ],
+  "max": [
+   0.62,
+   1.22,
+   1.07
+  ]
+ },
+ "Mine_Cart_Loaded": {
+  "triangles": 508,
+  "materials": [
+   "Mine_CrystalCyan",
+   "Mine_CrystalTeal",
+   "Mine_Dark",
+   "Mine_Iron",
+   "Mine_IronDark",
+   "Mine_RailSteel",
+   "Mine_Rock"
+  ],
+  "size": [
+   1.25,
+   1.77,
+   2.15
+  ],
+  "min": [
+   -0.62,
+   0.22,
+   -1.07
+  ],
+  "max": [
+   0.62,
+   1.99,
+   1.07
+  ]
+ },
+ "Mine_Support_Frame": {
+  "triangles": 108,
+  "materials": [
+   "Mine_Timber",
+   "Mine_TimberDark"
+  ],
+  "size": [
+   4.3,
+   3.95,
+   0.46
+  ],
+  "min": [
+   -2.15,
+   0.0,
+   -0.23
+  ],
+  "max": [
+   2.15,
+   3.95,
+   0.23
+  ]
+ },
+ "Mine_Lantern_Post": {
+  "triangles": 144,
+  "materials": [
+   "Mine_IronDark",
+   "Mine_LanternGlow",
+   "Mine_Timber",
+   "Mine_TimberDark"
+  ],
+  "size": [
+   0.86,
+   2.2,
+   0.4
+  ],
+  "min": [
+   -0.2,
+   0.0,
+   -0.2
+  ],
+  "max": [
+   0.66,
+   2.2,
+   0.2
+  ]
+ },
+ "Mine_Crystal_Cluster_Large": {
+  "triangles": 324,
+  "materials": [
+   "Mine_CrystalCyan",
+   "Mine_CrystalTeal",
+   "Mine_Rock",
+   "Mine_RockLight"
+  ],
+  "size": [
+   1.47,
+   1.58,
+   1.41
+  ],
+  "min": [
+   -0.71,
+   -0.04,
+   -0.76
+  ],
+  "max": [
+   0.76,
+   1.54,
+   0.65
+  ]
+ },
+ "Mine_Crystal_Shards_Small": {
+  "triangles": 192,
+  "materials": [
+   "Mine_CrystalCyan",
+   "Mine_CrystalTeal",
+   "Mine_Rock",
+   "Mine_RockLight"
+  ],
+  "size": [
+   0.97,
+   0.59,
+   0.67
+  ],
+  "min": [
+   -0.46,
+   -0.04,
+   -0.36
+  ],
+  "max": [
+   0.51,
+   0.56,
+   0.31
+  ]
+ },
+ "Mine_Crate": {
+  "triangles": 132,
+  "materials": [
+   "Mine_Timber",
+   "Mine_TimberDark"
+  ],
+  "size": [
+   0.98,
+   0.94,
+   0.98
+  ],
+  "min": [
+   -0.49,
+   -0.02,
+   -0.49
+  ],
+  "max": [
+   0.49,
+   0.92,
+   0.49
+  ]
+ },
+ "Mine_Barrel": {
+  "triangles": 224,
+  "materials": [
+   "Mine_IronDark",
+   "Mine_Timber"
+  ],
+  "size": [
+   0.76,
+   0.9,
+   0.76
+  ],
+  "min": [
+   -0.38,
+   0.0,
+   -0.38
+  ],
+  "max": [
+   0.38,
+   0.9,
+   0.38
+  ]
+ },
+ "Mine_Ore_Sack": {
+  "triangles": 126,
+  "materials": [
+   "Mine_Sack",
+   "Mine_TimberDark"
+  ],
+  "size": [
+   0.63,
+   0.69,
+   0.64
+  ],
+  "min": [
+   -0.3,
+   -0.01,
+   -0.32
+  ],
+  "max": [
+   0.34,
+   0.67,
+   0.32
+  ]
+ },
+ "Mine_Ore_Pile": {
+  "triangles": 330,
+  "materials": [
+   "Mine_CrystalCyan",
+   "Mine_CrystalTeal",
+   "Mine_Rock",
+   "Mine_RockLight"
+  ],
+  "size": [
+   1.7,
+   0.6,
+   1.53
+  ],
+  "min": [
+   -0.85,
+   -0.04,
+   -0.8
+  ],
+  "max": [
+   0.84,
+   0.56,
+   0.73
+  ]
+ },
+ "Mine_Tool_Rack": {
+  "triangles": 142,
+  "materials": [
+   "Mine_Iron",
+   "Mine_Timber",
+   "Mine_TimberDark"
+  ],
+  "size": [
+   1.6,
+   1.44,
+   0.18
+  ],
+  "min": [
+   -0.8,
+   0.4,
+   -0.05
+  ],
+  "max": [
+   0.8,
+   1.84,
+   0.14
+  ]
+ },
+ "Mine_Rail_EndStop": {
+  "triangles": 192,
+  "materials": [
+   "Mine_Amber",
+   "Mine_RailSteel",
+   "Mine_Timber",
+   "Mine_TimberDark"
+  ],
+  "size": [
+   1.8,
+   1.0,
+   2.4
+  ],
+  "min": [
+   -0.9,
+   0.0,
+   -0.4
+  ],
+  "max": [
+   0.9,
+   1.0,
+   2.0
+  ]
+ },
+ "Mine_Warning_Sign": {
+  "triangles": 68,
+  "materials": [
+   "Mine_Amber",
+   "Mine_Dark",
+   "Mine_Timber",
+   "Mine_TimberDark"
+  ],
+  "size": [
+   0.9,
+   1.9,
+   0.34
+  ],
+  "min": [
+   -0.45,
+   0.0,
+   -0.17
+  ],
+  "max": [
+   0.45,
+   1.9,
+   0.17
+  ]
+ }
+}

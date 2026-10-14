@@ -12,8 +12,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 827d866ddc1f1064e92f4cae031c506c
   - enabled: 1
-    path: Assets/Scenes/Scene1.unity
+    path: Assets/Scenes/Town.unity
     guid: b9a550133400b4e398ad88bc22f94913
+  - enabled: 1
+    path: Assets/Scenes/Mine.unity
+    guid: 83b2f643646f14258bd277a36e86a89c
   m_configObjects:
     com.unity.dt.app-ui: {fileID: 11400000, guid: 1b1c20d82303e4b5781c3ef50ac1449f, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
