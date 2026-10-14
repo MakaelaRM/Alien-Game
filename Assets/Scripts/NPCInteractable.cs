@@ -25,6 +25,11 @@ public class NPCInteractable : MonoBehaviour
     [Tooltip("Gap to keep between the bubble and the screen edge, as a fraction of the screen.")]
     [SerializeField, Range(0f, 0.2f)] private float viewMargin = 0.04f;
 
+    [Header("Audio Settings")]
+    [SerializeField] public AudioClip dialogueAudio;
+    private AudioSource audioSource;
+    
+
     [Header("Rewards (optional)")]
     [Tooltip("Given when the player interacts. 0 = nothing. Negative takes away (e.g. paying for a meal).")]
     [SerializeField] private int moneyReward;
@@ -44,6 +49,8 @@ public class NPCInteractable : MonoBehaviour
 
     [Header("Hide While Interacting (optional)")]
     [SerializeField] private Renderer[] hideWhileInteracting;
+    
+    
 
     private bool rewardGiven;
     private bool returnRewardGiven;
@@ -73,9 +80,9 @@ public class NPCInteractable : MonoBehaviour
 
     void Awake()
     {
+        audioSource = GetComponent<AudioSource>();
         if (string.IsNullOrEmpty(npcName))
             npcName = gameObject.name;
-
         modelHeight = GetTopOfModel() - transform.position.y;
 
         promptBubble = SpawnBubble(chatBubblePrefab, "Chat Bubble Prefab", out promptBaseScale);
@@ -166,7 +173,7 @@ public class NPCInteractable : MonoBehaviour
         onReturnVisit = rewardOnlyOnce && hasVisited;
         hasVisited = true;
         SetHiddenRenderers(false);
-
+        playSoundOnInteract();
         if (onReturnVisit)
         {
             if (!(returnRewardOnlyOnce && returnRewardGiven) &&
@@ -178,6 +185,11 @@ public class NPCInteractable : MonoBehaviour
         {
             rewardGiven = true;
         }
+    }
+
+    public void playSoundOnInteract()
+    {
+        audioSource.PlayOneShot(dialogueAudio);
     }
 
     private void SetHiddenRenderers(bool visible)
