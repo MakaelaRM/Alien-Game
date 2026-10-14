@@ -218,6 +218,7 @@ public class NPCInteractable : MonoBehaviour
     public void ExitShop()
     {
         SetHiddenRenderers(true);
+    }
         
     public void playSoundOnInteract()
     {
