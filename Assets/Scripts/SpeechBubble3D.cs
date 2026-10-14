@@ -55,6 +55,7 @@ public class SpeechBubble3D : MonoBehaviour
     [Header("Text")]
     [Tooltip("Color used by HighlightKey() for key names like \"E\" or \"Esc\".")]
     [SerializeField] private Color keyColor = new Color(0.96f, 0.78f, 0.42f);
+    [SerializeField] private Color levelColor = new Color(0.392f, 1f, 0.196f);
     [Tooltip("How far the text floats in front of the bubble's face.")]
     [SerializeField] private float textLift = 0.004f;
 
@@ -118,6 +119,11 @@ public class SpeechBubble3D : MonoBehaviour
     public string HighlightKey(string key)
     {
         return "<color=#" + ColorUtility.ToHtmlStringRGB(keyColor) + ">" + key + "</color>";
+    }
+
+    public string HighlightLevel(int level)
+    {
+        return "<color=#" + ColorUtility.ToHtmlStringRGB(levelColor) + ">" + level.ToString() + "</color>";
     }
 
     /// Pops the bubble in from the tail tip.

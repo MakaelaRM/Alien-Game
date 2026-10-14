@@ -33,6 +33,8 @@ public class FixedAngleCamera : MonoBehaviour
     Quaternion focusStartRot;
     Vector3 focusEndPos;
     Quaternion focusEndRot;
+
+    /// True once the zoom-in has finished and the camera is resting on the NPC.
     public bool IsFocusComplete => isFocusing && focusTimer >= focusTransitionTime;
 
     /// Smoothly moves the camera in front of the NPC, looking at lookPoint.
@@ -57,6 +59,27 @@ public class FixedAngleCamera : MonoBehaviour
     {
         isFocusing = false;
         velocity = Vector3.zero; // clear stale follow velocity so it doesn't lurch
+    }
+
+    /// Like FocusOn, but ends 'distance' in front of the NPC and turns the camera so the NPC sits
+    /// at viewportX across the screen (0.75 = centered on the right half) at the same height.
+    public void FocusOnOffset(Transform npc, Vector3 lookPoint, float viewportX, float distance)
+    {
+        Vector3 npcForward = npc.forward;
+        npcForward.y = 0f;
+        npcForward.Normalize();
+
+        focusStartPos = transform.position;
+        focusStartRot = transform.rotation;
+        focusEndPos = lookPoint + npcForward * distance;
+
+        Camera cam = GetComponent<Camera>();
+        float halfWidth = Mathf.Tan(cam.fieldOfView * 0.5f * Mathf.Deg2Rad) * cam.aspect;
+        float angle = Mathf.Atan((viewportX * 2f - 1f) * halfWidth) * Mathf.Rad2Deg;
+        focusEndRot = Quaternion.AngleAxis(-angle, Vector3.up) * Quaternion.LookRotation(lookPoint - focusEndPos);
+
+        focusTimer = 0f;
+        isFocusing = true;
     }
 
     void LateUpdate()

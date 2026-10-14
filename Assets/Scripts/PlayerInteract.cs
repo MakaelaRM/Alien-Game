@@ -1,16 +1,26 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+/// Finds the nearest NPC, shows its prompt, and runs dialogue and shop interactions with it.
 public class PlayerInteract : MonoBehaviour
 {
     [SerializeField] private InputAction interactAction = new InputAction("Interact", InputActionType.Button, "<Keyboard>/e");
-    [SerializeField] private InputAction exitAction = new InputAction("ExitInteract", InputActionType.Button, "<Keyboard>/escape");
+    [SerializeField] private InputAction shopAction = new InputAction("OpenShop", InputActionType.Button, "<Keyboard>/q");
     [SerializeField] private float interactRange = 5f;
     [SerializeField] private FixedAngleCamera cameraController;
 
-    private NPCInteractable currentNPC;      // NPC whose prompt is showing
-    private NPCInteractable interactingNPC;  // NPC we're currently interacting with
-    private bool dialogueShown;
+    [Header("Shop")]
+    [SerializeField] private ShopMenu shopMenu;
+    [Tooltip("How far in front of the NPC the camera stops while shopping.")]
+    [SerializeField] private float shopFocusDistance = 3f;
+    [Tooltip("Where the NPC sits across the screen while shopping. 0.75 = centered on the right half.")]
+    [SerializeField, Range(0.5f, 0.95f)] private float shopScreenX = 0.75f;
+
+    private NPCInteractable currentNPC;
+    private NPCInteractable interactingNPC;
+    private bool inShop;
+    private bool contentShown;
+    private bool promptShowsShop;
 
     public bool IsInteracting => interactingNPC != null;
 
@@ -18,35 +28,43 @@ public class PlayerInteract : MonoBehaviour
     {
         if (cameraController == null && Camera.main != null)
             cameraController = Camera.main.GetComponent<FixedAngleCamera>();
+        if (shopMenu == null)
+            shopMenu = FindFirstObjectByType<ShopMenu>();
     }
 
     void OnEnable()
     {
         interactAction.Enable();
-        exitAction.Enable();
+        shopAction.Enable();
     }
 
     void OnDisable()
     {
         interactAction.Disable();
-        exitAction.Disable();
+        shopAction.Disable();
     }
 
     void Update()
     {
         if (IsInteracting)
         {
-            // Show the dialogue once the camera has finished zooming in
-            if (!dialogueShown && (cameraController == null || cameraController.IsFocusComplete))
+            if (!contentShown && (cameraController == null || cameraController.IsFocusComplete))
             {
-                Transform viewer = cameraController != null ? cameraController.transform : Camera.main.transform;
-                interactingNPC.ShowDialogue(exitAction.GetBindingDisplayString(), viewer);
-                dialogueShown = true;
+                if (inShop)
+                {
+                    if (shopMenu != null) shopMenu.Open(interactingNPC, shopAction.GetBindingDisplayString());
+                }
+                else
+                {
+                    Transform viewer = cameraController != null ? cameraController.transform : Camera.main.transform;
+                    interactingNPC.ShowDialogue(interactAction.GetBindingDisplayString(), viewer);
+                }
+                contentShown = true;
             }
 
-            if (exitAction.WasPressedThisFrame())
+            if ((!inShop && interactAction.WasPressedThisFrame()) || (inShop && shopAction.WasPressedThisFrame()))
                 EndInteraction();
-            return; // skip prompt logic so no name bubbles appear during the interaction
+            return;
         }
 
         NPCInteractable closest = FindClosestNPC();
@@ -54,33 +72,71 @@ public class PlayerInteract : MonoBehaviour
         if (closest != currentNPC)
         {
             if (currentNPC != null) currentNPC.HidePrompt();
-            if (closest != null) closest.ShowPrompt(interactAction.GetBindingDisplayString());
             currentNPC = closest;
+            if (currentNPC != null) ShowPrompt(currentNPC);
+        }
+        else if (currentNPC != null && currentNPC.CanOpenShop != promptShowsShop)
+        {
+            ShowPrompt(currentNPC);
         }
 
-        if (currentNPC != null && interactAction.WasPressedThisFrame())
-        {
-            StartInteraction(currentNPC);
-        }
+        if (currentNPC == null) return;
+
+        if (interactAction.WasPressedThisFrame())
+            StartInteraction(currentNPC, false);
+        else if (currentNPC.CanOpenShop && shopAction.WasPressedThisFrame())
+            StartInteraction(currentNPC, true);
     }
 
-    private void StartInteraction(NPCInteractable npc)
+    private void ShowPrompt(NPCInteractable npc)
     {
-        interactingNPC = npc;
-        dialogueShown = false;
-        npc.HidePrompt();
-        npc.Interact();
+        promptShowsShop = npc.CanOpenShop;
+        npc.ShowPrompt(interactAction.GetBindingDisplayString(), shopAction.GetBindingDisplayString());
+    }
 
-        if (cameraController != null)
-            cameraController.FocusOn(npc.transform, npc.FocusPoint);
+    private void StartInteraction(NPCInteractable npc, bool shop)
+    {
+        if (shop && shopMenu == null)
+        {
+            Debug.LogWarning("No ShopMenu in the scene. Add one to an empty GameObject to use shops.", this);
+            return;
+        }
+
+        interactingNPC = npc;
+        inShop = shop;
+        contentShown = false;
+        npc.HidePrompt();
+
+        if (shop)
+        {
+            npc.EnterShop();
+            if (cameraController != null)
+                cameraController.FocusOnOffset(npc.transform, npc.FocusPoint, shopScreenX, shopFocusDistance);
+        }
+        else
+        {
+            npc.Interact();
+            if (cameraController != null)
+                cameraController.FocusOn(npc.transform, npc.FocusPoint);
+        }
     }
 
     private void EndInteraction()
     {
-        interactingNPC.HideDialogue();
+        if (inShop)
+        {
+            if (shopMenu != null) shopMenu.Close();
+            interactingNPC.ExitShop();
+        }
+        else
+        {
+            interactingNPC.HideDialogue();
+        }
+
         interactingNPC = null;
-        currentNPC = null; // forces the prompt to be re-checked next frame
-        dialogueShown = false;
+        currentNPC = null;
+        inShop = false;
+        contentShown = false;
 
         if (cameraController != null)
             cameraController.StopFocus();
