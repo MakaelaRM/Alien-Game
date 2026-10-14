@@ -13,7 +13,7 @@ public class Menu : MonoBehaviour
 
     public void Play()
     {
-        SceneManager.LoadScene("Scene1");
+        SceneManager.LoadScene("Town");
         //SceneManager.LoadScene(1);
     }
 
