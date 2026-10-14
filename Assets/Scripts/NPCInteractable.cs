@@ -218,13 +218,14 @@ public class NPCInteractable : MonoBehaviour
     public void ExitShop()
     {
         SetHiddenRenderers(true);
+    }
         
     public void playSoundOnInteract()
     {
         audioSource.PlayOneShot(dialogueAudio);
     }
 
-    private void SetHiddenRenderers(bool visible)
+    public void SetHiddenRenderers(bool visible)
     {
         if (hideWhileInteracting == null) return;
         foreach (Renderer r in hideWhileInteracting)
