@@ -225,7 +225,7 @@ public class NPCInteractable : MonoBehaviour
         audioSource.PlayOneShot(dialogueAudio);
     }
 
-    public void SetHiddenRenderers(bool visible)
+    private void SetHiddenRenderers(bool visible)
     {
         if (hideWhileInteracting == null) return;
         foreach (Renderer r in hideWhileInteracting)
