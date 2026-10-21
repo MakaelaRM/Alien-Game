@@ -3623,6 +3623,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ba8726d8104d54d5899bdab8bbcb19c1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 175971383}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ba8726d8104d54d5899bdab8bbcb19c1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 175971384}
   m_SourcePrefab: {fileID: 100100000, guid: ba8726d8104d54d5899bdab8bbcb19c1, type: 3}
 --- !u!4 &175971379 stripped
 Transform:
@@ -3811,6 +3814,33 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &175971384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175971380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f619ebcddf0774fcaa772ec90b2b069f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NpcProceduralAnim
+  head: {fileID: 0}
+  body: {fileID: 0}
+  legL: {fileID: 0}
+  legR: {fileID: 0}
+  armL: {fileID: 0}
+  armR: {fileID: 0}
+  idleBobHeight: 0.03
+  idleBobSpeed: 4
+  idleLookAngle: 10
+  swingLimbs: 1
+  walkSwingAngle: 35
+  stepRate: 2.2
+  walkBobHeight: 0.05
+  swingAxis: {x: 1, y: 0, z: 0}
+  moveThreshold: 0.05
 --- !u!1 &178830277 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8bbeb0dde9cd04ab38d63e16f75a3f4b, type: 3}
@@ -4488,6 +4518,37 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d0c4fdc7f92e84b0a94f49b08b1f096b, type: 3}
   m_PrefabInstance: {fileID: 298726797}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &207969921
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 207969922}
+  m_Layer: 0
+  m_Name: Kid_PointA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &207969922
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207969921}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -85.91, y: 0, z: 2.5499997}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 441642097}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &209847395 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8bbeb0dde9cd04ab38d63e16f75a3f4b, type: 3}
@@ -6213,7 +6274,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ebfc628c4ec4e4014848ccf8941faf2e, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.17364809
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ebfc628c4ec4e4014848ccf8941faf2e, type: 3}
       propertyPath: m_LocalRotation.x
@@ -6221,11 +6282,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ebfc628c4ec4e4014848ccf8941faf2e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.9848078
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ebfc628c4ec4e4014848ccf8941faf2e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ebfc628c4ec4e4014848ccf8941faf2e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6233,7 +6294,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ebfc628c4ec4e4014848ccf8941faf2e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 200
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ebfc628c4ec4e4014848ccf8941faf2e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -6256,6 +6317,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ebfc628c4ec4e4014848ccf8941faf2e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 329020562}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ebfc628c4ec4e4014848ccf8941faf2e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 329020563}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ebfc628c4ec4e4014848ccf8941faf2e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 329020564}
   m_SourcePrefab: {fileID: 100100000, guid: ebfc628c4ec4e4014848ccf8941faf2e, type: 3}
 --- !u!4 &329020558 stripped
 Transform:
@@ -6429,6 +6496,57 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &329020563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329020559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f619ebcddf0774fcaa772ec90b2b069f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NpcProceduralAnim
+  head: {fileID: 0}
+  body: {fileID: 0}
+  legL: {fileID: 0}
+  legR: {fileID: 0}
+  armL: {fileID: 0}
+  armR: {fileID: 0}
+  idleBobHeight: 0.03
+  idleBobSpeed: 8
+  idleLookAngle: 10
+  swingLimbs: 1
+  walkSwingAngle: 35
+  stepRate: 2.2
+  walkBobHeight: 0.05
+  swingAxis: {x: 1, y: 0, z: 0}
+  moveThreshold: 0.05
+--- !u!114 &329020564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329020559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bec25e25329d4085915abf487507904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NpcWalker
+  points:
+  - {fileID: 207969922}
+  - {fileID: 1504168178}
+  - {fileID: 1681636776}
+  speed: 2.5
+  waitAtPoint: 30
+  pingPong: 1
+  turnSpeed: 8
+  faceCameraWhenWaiting: 1
+  facingOffsetY: 0
+  animator: {fileID: 0}
+  speedParam: Speed
 --- !u!1001 &329219889
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6846,6 +6964,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 003c5dea012154b578bab5b4df230a71, type: 3}
       insertIndex: -1
       addedObject: {fileID: 331615811}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 003c5dea012154b578bab5b4df230a71, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 331615812}
   m_SourcePrefab: {fileID: 100100000, guid: 003c5dea012154b578bab5b4df230a71, type: 3}
 --- !u!4 &331615807 stripped
 Transform:
@@ -7015,6 +7136,33 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &331615812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331615808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f619ebcddf0774fcaa772ec90b2b069f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NpcProceduralAnim
+  head: {fileID: 0}
+  body: {fileID: 0}
+  legL: {fileID: 0}
+  legR: {fileID: 0}
+  armL: {fileID: 0}
+  armR: {fileID: 0}
+  idleBobHeight: 0.03
+  idleBobSpeed: 4
+  idleLookAngle: 10
+  swingLimbs: 1
+  walkSwingAngle: 35
+  stepRate: 2.2
+  walkBobHeight: 0.05
+  swingAxis: {x: 1, y: 0, z: 0}
+  moveThreshold: 0.05
 --- !u!1 &332183301 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8bbeb0dde9cd04ab38d63e16f75a3f4b, type: 3}
@@ -9731,6 +9879,42 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.9, y: 100, z: 0.039598}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &441642096
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 441642097}
+  m_Layer: 0
+  m_Name: NPC_Walking_Points
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &441642097
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441642096}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 263.66, y: 0, z: 1.94}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1120829620}
+  - {fileID: 1678485904}
+  - {fileID: 207969922}
+  - {fileID: 1504168178}
+  - {fileID: 1681636776}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &445493200 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3924390359808885084, guid: 8bbeb0dde9cd04ab38d63e16f75a3f4b, type: 3}
@@ -10370,6 +10554,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a53c4dd6531b0471ca3a31d357f2c918, type: 3}
       insertIndex: -1
       addedObject: {fileID: 464209635}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a53c4dd6531b0471ca3a31d357f2c918, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 464209636}
   m_SourcePrefab: {fileID: 100100000, guid: a53c4dd6531b0471ca3a31d357f2c918, type: 3}
 --- !u!4 &464209631 stripped
 Transform:
@@ -10554,6 +10741,33 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &464209636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464209632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f619ebcddf0774fcaa772ec90b2b069f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NpcProceduralAnim
+  head: {fileID: 0}
+  body: {fileID: 0}
+  legL: {fileID: 0}
+  legR: {fileID: 0}
+  armL: {fileID: 0}
+  armR: {fileID: 0}
+  idleBobHeight: 0.03
+  idleBobSpeed: 6
+  idleLookAngle: 10
+  swingLimbs: 1
+  walkSwingAngle: 35
+  stepRate: 2.2
+  walkBobHeight: 0.05
+  swingAxis: {x: 1, y: 0, z: 0}
+  moveThreshold: 0.05
 --- !u!1 &466701980 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8bbeb0dde9cd04ab38d63e16f75a3f4b, type: 3}
@@ -11905,6 +12119,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: db49342c08c3e46f99d41b183cdfe497, type: 3}
       insertIndex: -1
       addedObject: {fileID: 507092594}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: db49342c08c3e46f99d41b183cdfe497, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 507092595}
   m_SourcePrefab: {fileID: 100100000, guid: db49342c08c3e46f99d41b183cdfe497, type: 3}
 --- !u!4 &507092590 stripped
 Transform:
@@ -12074,6 +12291,33 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &507092595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507092591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f619ebcddf0774fcaa772ec90b2b069f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NpcProceduralAnim
+  head: {fileID: 0}
+  body: {fileID: 0}
+  legL: {fileID: 0}
+  legR: {fileID: 0}
+  armL: {fileID: 0}
+  armR: {fileID: 0}
+  idleBobHeight: 0.03
+  idleBobSpeed: 4
+  idleLookAngle: 10
+  swingLimbs: 1
+  walkSwingAngle: 35
+  stepRate: 2.2
+  walkBobHeight: 0.05
+  swingAxis: {x: 1, y: 0, z: 0}
+  moveThreshold: 0.05
 --- !u!1 &510356046 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3924390359808885084, guid: 8bbeb0dde9cd04ab38d63e16f75a3f4b, type: 3}
@@ -17878,6 +18122,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Footsteps
   footstepClip: {fileID: 8300000, guid: 71d29eec632872e438c6f6481e3d6358, type: 3}
   stepInterval: 1.25
+--- !u!114 &743292163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 743292155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f619ebcddf0774fcaa772ec90b2b069f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NpcProceduralAnim
+  head: {fileID: 0}
+  body: {fileID: 0}
+  legL: {fileID: 0}
+  legR: {fileID: 0}
+  armL: {fileID: 0}
+  armR: {fileID: 0}
+  idleBobHeight: 0.03
+  idleBobSpeed: 2
+  idleLookAngle: 10
+  swingLimbs: 1
+  walkSwingAngle: 35
+  stepRate: 2.2
+  walkBobHeight: 0.05
+  swingAxis: {x: 1, y: 0, z: 0}
+  moveThreshold: 0.05
 --- !u!1001 &743421995
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23268,6 +23539,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2f47d2ce6734f420b8a326c2c211afb2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 964382946}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2f47d2ce6734f420b8a326c2c211afb2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 964382947}
   m_SourcePrefab: {fileID: 100100000, guid: 2f47d2ce6734f420b8a326c2c211afb2, type: 3}
 --- !u!4 &964382942 stripped
 Transform:
@@ -23437,6 +23711,33 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &964382947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964382943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f619ebcddf0774fcaa772ec90b2b069f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NpcProceduralAnim
+  head: {fileID: 0}
+  body: {fileID: 0}
+  legL: {fileID: 0}
+  legR: {fileID: 0}
+  armL: {fileID: 0}
+  armR: {fileID: 0}
+  idleBobHeight: 0.03
+  idleBobSpeed: 4
+  idleLookAngle: 10
+  swingLimbs: 1
+  walkSwingAngle: 35
+  stepRate: 2.2
+  walkBobHeight: 0.05
+  swingAxis: {x: 1, y: 0, z: 0}
+  moveThreshold: 0.05
 --- !u!1 &964833811 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8bbeb0dde9cd04ab38d63e16f75a3f4b, type: 3}
@@ -25714,6 +26015,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 84fded65b615b4e62aa12a897964c548, type: 3}
       insertIndex: -1
       addedObject: {fileID: 743292161}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 84fded65b615b4e62aa12a897964c548, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 743292163}
   m_SourcePrefab: {fileID: 100100000, guid: 84fded65b615b4e62aa12a897964c548, type: 3}
 --- !u!1 &1074331959 stripped
 GameObject:
@@ -26887,6 +27191,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.27, y: 100, z: 0.411924}
   m_Center: {x: 0, y: 0.675, z: 0.114038}
+--- !u!1 &1120829619
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1120829620}
+  m_Layer: 0
+  m_Name: Prospector_PointA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1120829620
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1120829619}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 441642097}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1122949623 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3808455736574911743, guid: 8bbeb0dde9cd04ab38d63e16f75a3f4b, type: 3}
@@ -27108,6 +27443,33 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1139858301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1139858296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f619ebcddf0774fcaa772ec90b2b069f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NpcProceduralAnim
+  head: {fileID: 0}
+  body: {fileID: 0}
+  legL: {fileID: 0}
+  legR: {fileID: 0}
+  armL: {fileID: 0}
+  armR: {fileID: 0}
+  idleBobHeight: 0.03
+  idleBobSpeed: 2
+  idleLookAngle: 10
+  swingLimbs: 1
+  walkSwingAngle: 35
+  stepRate: 2.2
+  walkBobHeight: 0.05
+  swingAxis: {x: 1, y: 0, z: 0}
+  moveThreshold: 0.05
 --- !u!1 &1140312270 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3924390359808885084, guid: 8bbeb0dde9cd04ab38d63e16f75a3f4b, type: 3}
@@ -34264,6 +34626,9 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 66b3d09902e7a4777afd88e689454026, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2032401536}
     - targetCorrespondingSourceObject: {fileID: -5656751000709608196, guid: 66b3d09902e7a4777afd88e689454026, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1403227991}
@@ -37412,6 +37777,37 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3779704345172111970, guid: cadf86ff6dfd249378582700f293ad95, type: 3}
+--- !u!1 &1504168177
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1504168178}
+  m_Layer: 0
+  m_Name: Kid_PointB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1504168178
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504168177}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -65.95, y: 0, z: 8.04}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 441642097}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1507199953 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3808455736574911743, guid: 8bbeb0dde9cd04ab38d63e16f75a3f4b, type: 3}
@@ -38517,6 +38913,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ee572d98d4ab44bd4b991d41a7215020, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1562792807}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ee572d98d4ab44bd4b991d41a7215020, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1562792808}
   m_SourcePrefab: {fileID: 100100000, guid: ee572d98d4ab44bd4b991d41a7215020, type: 3}
 --- !u!4 &1562792803 stripped
 Transform:
@@ -38687,6 +39086,33 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1562792808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562792804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f619ebcddf0774fcaa772ec90b2b069f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NpcProceduralAnim
+  head: {fileID: 0}
+  body: {fileID: 0}
+  legL: {fileID: 0}
+  legR: {fileID: 0}
+  armL: {fileID: 0}
+  armR: {fileID: 0}
+  idleBobHeight: 0.03
+  idleBobSpeed: 6
+  idleLookAngle: 10
+  swingLimbs: 1
+  walkSwingAngle: 35
+  stepRate: 2.2
+  walkBobHeight: 0.05
+  swingAxis: {x: 1, y: 0, z: 0}
+  moveThreshold: 0.05
 --- !u!1001 &1563626390
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41667,6 +42093,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.27, y: 100, z: 0.411924}
   m_Center: {x: 0, y: 0.675, z: 0.114038}
+--- !u!1 &1678485903
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1678485904}
+  m_Layer: 0
+  m_Name: Prospector_PointB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1678485904
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678485903}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -376.66, y: 0, z: -0.060000062}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 441642097}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1678766617 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8bbeb0dde9cd04ab38d63e16f75a3f4b, type: 3}
@@ -41714,6 +42171,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1681636775
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1681636776}
+  m_Layer: 0
+  m_Name: Kid_PointC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1681636776
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681636775}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -32.79, y: 0, z: 2.29}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 441642097}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1683323926 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3924390359808885084, guid: 8bbeb0dde9cd04ab38d63e16f75a3f4b, type: 3}
@@ -41911,6 +42399,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3942e81f275bf431fbca2416df59eaf9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1139858300}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3942e81f275bf431fbca2416df59eaf9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1139858301}
   m_SourcePrefab: {fileID: 100100000, guid: 3942e81f275bf431fbca2416df59eaf9, type: 3}
 --- !u!1 &1705413986 stripped
 GameObject:
@@ -44077,6 +44568,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e6970a2bc16f347ea90dcac96305b08a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1810063679}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e6970a2bc16f347ea90dcac96305b08a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1810063680}
   m_SourcePrefab: {fileID: 100100000, guid: e6970a2bc16f347ea90dcac96305b08a, type: 3}
 --- !u!4 &1810063675 stripped
 Transform:
@@ -44246,6 +44740,33 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1810063680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810063676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f619ebcddf0774fcaa772ec90b2b069f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NpcProceduralAnim
+  head: {fileID: 0}
+  body: {fileID: 0}
+  legL: {fileID: 0}
+  legR: {fileID: 0}
+  armL: {fileID: 0}
+  armR: {fileID: 0}
+  idleBobHeight: 0.03
+  idleBobSpeed: 4
+  idleLookAngle: 10
+  swingLimbs: 1
+  walkSwingAngle: 35
+  stepRate: 2.2
+  walkBobHeight: 0.05
+  swingAxis: {x: 1, y: 0, z: 0}
+  moveThreshold: 0.05
 --- !u!1 &1812563251 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8bbeb0dde9cd04ab38d63e16f75a3f4b, type: 3}
@@ -51062,6 +51583,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: eef09ad1d731345d799b5159d23c2c57, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2007976940}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: eef09ad1d731345d799b5159d23c2c57, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2007976941}
   m_SourcePrefab: {fileID: 100100000, guid: eef09ad1d731345d799b5159d23c2c57, type: 3}
 --- !u!4 &2007976936 stripped
 Transform:
@@ -51231,6 +51755,33 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2007976941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007976937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f619ebcddf0774fcaa772ec90b2b069f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NpcProceduralAnim
+  head: {fileID: 0}
+  body: {fileID: 0}
+  legL: {fileID: 0}
+  legR: {fileID: 0}
+  armL: {fileID: 0}
+  armR: {fileID: 0}
+  idleBobHeight: 0.03
+  idleBobSpeed: 4
+  idleLookAngle: 10
+  swingLimbs: 1
+  walkSwingAngle: 35
+  stepRate: 2.2
+  walkBobHeight: 0.05
+  swingAxis: {x: 1, y: 0, z: 0}
+  moveThreshold: 0.05
 --- !u!1 &2010274712 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8bbeb0dde9cd04ab38d63e16f75a3f4b, type: 3}
@@ -51702,6 +52253,33 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -8409414141555019760, guid: ebaf63513bf3644a0859b0115a337846, type: 3}
+--- !u!1 &2032401535 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 66b3d09902e7a4777afd88e689454026, type: 3}
+  m_PrefabInstance: {fileID: 1403227972}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2032401536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032401535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c905ef8117a7401e9097670983e8384, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ClockHands
+  useRealTime: 0
+  speedMultiplier: 5
+  startHour: 3
+  spinAxis: {x: 0, y: 0, z: 1}
+  reverseAll: 0
+  reverseSuffixes: []
+  smoothSeconds: 1
+  hourKey: Clock_Hour
+  minuteKey: Clock_Minute
+  secondKey: Clock_Third
 --- !u!1 &2034231593 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3808455736574911743, guid: 8bbeb0dde9cd04ab38d63e16f75a3f4b, type: 3}
@@ -52775,6 +53353,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 97864b62c755c4361a17b46961ea5d60, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2085524778}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 97864b62c755c4361a17b46961ea5d60, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2085524779}
   m_SourcePrefab: {fileID: 100100000, guid: 97864b62c755c4361a17b46961ea5d60, type: 3}
 --- !u!4 &2085524774 stripped
 Transform:
@@ -52944,6 +53525,33 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2085524779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2085524775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f619ebcddf0774fcaa772ec90b2b069f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NpcProceduralAnim
+  head: {fileID: 0}
+  body: {fileID: 0}
+  legL: {fileID: 0}
+  legR: {fileID: 0}
+  armL: {fileID: 0}
+  armR: {fileID: 0}
+  idleBobHeight: 0.03
+  idleBobSpeed: 4
+  idleLookAngle: 10
+  swingLimbs: 1
+  walkSwingAngle: 35
+  stepRate: 2.2
+  walkBobHeight: 0.05
+  swingAxis: {x: 1, y: 0, z: 0}
+  moveThreshold: 0.05
 --- !u!1 &2091052756 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b9c2b9934c4fe45158b288b584960f32, type: 3}
@@ -55249,7 +55857,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bbd2bd27ccc2b4769850a17e3dadfa74, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.42261827
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bbd2bd27ccc2b4769850a17e3dadfa74, type: 3}
       propertyPath: m_LocalRotation.x
@@ -55257,7 +55865,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bbd2bd27ccc2b4769850a17e3dadfa74, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.9063079
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bbd2bd27ccc2b4769850a17e3dadfa74, type: 3}
       propertyPath: m_LocalRotation.z
@@ -55269,7 +55877,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bbd2bd27ccc2b4769850a17e3dadfa74, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 230
+      value: 270
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bbd2bd27ccc2b4769850a17e3dadfa74, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -55292,6 +55900,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bbd2bd27ccc2b4769850a17e3dadfa74, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2146322632}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bbd2bd27ccc2b4769850a17e3dadfa74, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2146322633}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bbd2bd27ccc2b4769850a17e3dadfa74, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2146322634}
   m_SourcePrefab: {fileID: 100100000, guid: bbd2bd27ccc2b4769850a17e3dadfa74, type: 3}
 --- !u!4 &2146322628 stripped
 Transform:
@@ -55461,6 +56075,56 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2146322633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146322629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f619ebcddf0774fcaa772ec90b2b069f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NpcProceduralAnim
+  head: {fileID: 0}
+  body: {fileID: 0}
+  legL: {fileID: 0}
+  legR: {fileID: 0}
+  armL: {fileID: 0}
+  armR: {fileID: 0}
+  idleBobHeight: 0.03
+  idleBobSpeed: 4
+  idleLookAngle: 10
+  swingLimbs: 1
+  walkSwingAngle: 35
+  stepRate: 2.2
+  walkBobHeight: 0.05
+  swingAxis: {x: 1, y: 0, z: 0}
+  moveThreshold: 0.05
+--- !u!114 &2146322634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146322629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bec25e25329d4085915abf487507904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NpcWalker
+  points:
+  - {fileID: 1120829620}
+  - {fileID: 1678485904}
+  speed: 1.5
+  waitAtPoint: 2
+  pingPong: 1
+  turnSpeed: 8
+  faceCameraWhenWaiting: 1
+  facingOffsetY: 0
+  animator: {fileID: 0}
+  speedParam: Speed
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -55489,3 +56153,4 @@ SceneRoots:
   - {fileID: 608030962}
   - {fileID: 2045303784}
   - {fileID: 1106868691}
+  - {fileID: 441642097}
