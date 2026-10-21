@@ -8,7 +8,7 @@ public class CharacterMovement : MonoBehaviour
 {
     private float playerSpeed = 4f;
     private float sprintMultiplier = 1.8f;
-    private float jumpHeight = 0.35f;
+    private float jumpHeight = .8f;
     private float gravityValue = -3f;
     private float turnSpeed = 10f;
 
