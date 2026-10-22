@@ -34030,6 +34030,7 @@ Transform:
   - {fileID: 1383141236}
   - {fileID: 864081760}
   - {fileID: 2142996767}
+  - {fileID: 2045303787}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1376995923
@@ -52713,19 +52714,19 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1375941067}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ece35793ca9bd4be79489bbd1378c866, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 223.46
+      value: 178.16
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ece35793ca9bd4be79489bbd1378c866, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.13999666
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ece35793ca9bd4be79489bbd1378c866, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 11.12
+      value: 1.1199999
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ece35793ca9bd4be79489bbd1378c866, type: 3}
       propertyPath: m_LocalRotation.w
@@ -52733,7 +52734,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ece35793ca9bd4be79489bbd1378c866, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ece35793ca9bd4be79489bbd1378c866, type: 3}
       propertyPath: m_LocalRotation.y
@@ -52741,7 +52742,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ece35793ca9bd4be79489bbd1378c866, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ece35793ca9bd4be79489bbd1378c866, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -52793,6 +52794,11 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 20, y: 5, z: 7}
   m_Center: {x: 5, y: 2, z: -1}
+--- !u!4 &2045303787 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ece35793ca9bd4be79489bbd1378c866, type: 3}
+  m_PrefabInstance: {fileID: 2045303784}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2047562999
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56238,6 +56244,5 @@ SceneRoots:
   - {fileID: 685385391}
   - {fileID: 1619176809}
   - {fileID: 608030962}
-  - {fileID: 2045303784}
   - {fileID: 1106868691}
   - {fileID: 441642097}
