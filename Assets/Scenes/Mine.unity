@@ -968,6 +968,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 84fded65b615b4e62aa12a897964c548, type: 3}
       insertIndex: -1
       addedObject: {fileID: 243003627}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 84fded65b615b4e62aa12a897964c548, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 243003628}
   m_SourcePrefab: {fileID: 100100000, guid: 84fded65b615b4e62aa12a897964c548, type: 3}
 --- !u!1 &243003619 stripped
 GameObject:
@@ -1235,6 +1238,46 @@ MonoBehaviour:
   walkBobHeight: 0.05
   swingAxis: {x: 1, y: 0, z: 0}
   moveThreshold: 0.05
+  armRHeld: 0
+  armRHeldAngle: 0
+--- !u!114 &243003628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243003619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d3b06b832d664e18bcf03fd0710092a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponHolster
+  melee:
+    weapon: {fileID: -8679921383154817045, guid: 096184cb21c8740cebff1eb0748c4546, type: 3}
+    heldOffset: {x: 0, y: 0, z: 0}
+    heldEuler: {x: 0, y: 0, z: 0}
+    heldScale: {x: 2, y: 2, z: 2}
+    holsteredOffset: {x: -0.1, y: 0, z: 0}
+    holsteredEuler: {x: 180, y: 90, z: -30}
+    holsteredScale: {x: 1.5, y: 1.5, z: 4}
+  gun:
+    weapon: {fileID: -8679921383154817045, guid: d6837070f0c4c459593c804d2c1d4751, type: 3}
+    heldOffset: {x: 0, y: 0.03, z: 0.06}
+    heldEuler: {x: 0, y: 0, z: 0}
+    heldScale: {x: 1.5, y: 1.5, z: 1.5}
+    holsteredOffset: {x: 0, y: -0.2, z: 0}
+    holsteredEuler: {x: -60, y: 80, z: 0}
+    holsteredScale: {x: 1.5, y: 1.5, z: 1.5}
+  meleeOnHip: 1
+  armHeldAngle: -80
+  swapAnimation: 1
+  swapTime: 0.4
+  armDownAngle: 0
+  rightArm: {fileID: 0}
+  body: {fileID: 0}
+  townScenes:
+  - Town
+  firstWeapon: 0
 --- !u!1 &252274299 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e1c5c13e8937b4dc7a5078e81d4b2181, type: 3}
@@ -3506,6 +3549,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneTransition
   sceneToLoad: Town
+  pickSpawnPoint: 1
+  spawnPointName: MineSpawnPoint
+  useSpawnRotation: 0
 --- !u!1001 &949053493
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3866,6 +3912,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 324879376}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 4507935afb5b64f7a80bfd34f8de25ae, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4507935afb5b64f7a80bfd34f8de25ae, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4507935afb5b64f7a80bfd34f8de25ae, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4507935afb5b64f7a80bfd34f8de25ae, type: 3}
       propertyPath: m_LocalPosition.x
       value: 16.76001
       objectReference: {fileID: 0}
@@ -3904,6 +3962,10 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 4507935afb5b64f7a80bfd34f8de25ae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4507935afb5b64f7a80bfd34f8de25ae, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4507935afb5b64f7a80bfd34f8de25ae, type: 3}
       propertyPath: m_Name
@@ -5625,6 +5687,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 324879376}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: fc0135039809a4fa7b6af042d477ae2a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fc0135039809a4fa7b6af042d477ae2a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fc0135039809a4fa7b6af042d477ae2a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fc0135039809a4fa7b6af042d477ae2a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 20.669983
       objectReference: {fileID: 0}
@@ -5663,6 +5737,10 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: fc0135039809a4fa7b6af042d477ae2a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fc0135039809a4fa7b6af042d477ae2a, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fc0135039809a4fa7b6af042d477ae2a, type: 3}
       propertyPath: m_Name
@@ -5744,6 +5822,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 324879376}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f98b3dc1cd1f5475e915c7614c91f4f9, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f98b3dc1cd1f5475e915c7614c91f4f9, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f98b3dc1cd1f5475e915c7614c91f4f9, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f98b3dc1cd1f5475e915c7614c91f4f9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 18.42389
       objectReference: {fileID: 0}
@@ -5782,6 +5872,10 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: f98b3dc1cd1f5475e915c7614c91f4f9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f98b3dc1cd1f5475e915c7614c91f4f9, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f98b3dc1cd1f5475e915c7614c91f4f9, type: 3}
       propertyPath: m_Name
@@ -7040,13 +7134,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1859372271}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 286.1, y: -0.37, z: -1.13}
+  m_LocalRotation: {x: 0, y: 0.5, z: 0, w: 0.8660254}
+  m_LocalPosition: {x: 283.5, y: -0.03, z: -3.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 60, z: 0}
 --- !u!114 &1859372274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7060,6 +7154,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneTransition
   sceneToLoad: MineLevel2
+  pickSpawnPoint: 0
+  spawnPointName: 
+  useSpawnRotation: 1
 --- !u!1001 &1878713792
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7577,13 +7674,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1977911515}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 280.53, y: -0.37, z: 2.82}
+  m_LocalRotation: {x: 0, y: 0.3420201, z: 0, w: 0.9396927}
+  m_LocalPosition: {x: 278.97, y: -0.37, z: 1.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 40, z: 0}
 --- !u!114 &1977911518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7597,6 +7694,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneTransition
   sceneToLoad: MineLevel1
+  pickSpawnPoint: 0
+  spawnPointName: 
+  useSpawnRotation: 1
 --- !u!1 &2008902657 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 110d6ba20500a4c168354793e1a4ddff, type: 3}
