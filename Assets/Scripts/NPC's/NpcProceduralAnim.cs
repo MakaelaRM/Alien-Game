@@ -26,6 +26,11 @@ public class NpcProceduralAnim : MonoBehaviour
     public Vector3 swingAxis = new Vector3(1f, 0f, 0f);
     public float moveThreshold = 0.05f;
 
+    [Header("Set by WeaponSwap")]
+    [Tooltip("On: the right arm stops swinging and holds still (used when a weapon is out).")]
+    public bool armRHeld;
+    public float armRHeldAngle;
+
     Vector3 lastPos;
     float moveAmount;
     float walkPhase;
@@ -35,25 +40,43 @@ public class NpcProceduralAnim : MonoBehaviour
     Quaternion headStartRot;
     Quaternion legLStart, legRStart, armLStart, armRStart;
 
-    // Finds a child by the end of its name, e.g. "_Leg_L" matches "Char_Native_Prospector_Leg_L".
+    // Finds a part by the end of its name, e.g. "_Leg_L" matches "Char_Native_Prospector_Leg_L".
+    // Looks under this object first, then under the whole NPC (the root of this hierarchy).
     Transform Find(string suffix)
     {
         suffix = suffix.ToLower();
-        foreach (var t in GetComponentsInChildren<Transform>(true))
+        var r = Search(transform, suffix);
+        if (r == null && transform.root != transform) r = Search(transform.root, suffix);
+        return r;
+    }
+
+    Transform Search(Transform top, string suffix)
+    {
+        foreach (var t in top.GetComponentsInChildren<Transform>(true))
         {
-            if (t == transform) continue;
+            if (t == top) continue;
+            if (InsideWeapon(t, top)) continue; // don't grab a held weapon's own _Body etc.
             if (t.name.ToLower().EndsWith(suffix)) return t;
         }
         return null;
     }
 
+    static bool InsideWeapon(Transform t, Transform top)
+    {
+        for (var p = t; p != null && p != top; p = p.parent)
+            if (p.name.StartsWith("Wpn_", System.StringComparison.OrdinalIgnoreCase)) return true;
+        return false;
+    }
+
     void Warn(string what)
     {
         Debug.LogWarning("[NpcProceduralAnim] " + name + ": could not find the " + what +
-                         ". Drag it into the slot on the component, or check the child's name ends with the right suffix.", this);
+                         ". Drag it into the slot, or check the name ends with the right suffix.", this);
     }
 
-    void Start()
+    // Runs when you add the component, and from the component's right-click menu > Find Parts.
+    [ContextMenu("Find Parts")]
+    void FindParts()
     {
         if (head == null) { head = Find("_Head"); if (head == null) Warn("head (name ending _Head)"); }
         if (body == null) { body = Find("_Body"); if (body == null) Warn("body (name ending _Body)"); }
@@ -61,6 +84,13 @@ public class NpcProceduralAnim : MonoBehaviour
         if (legR == null) { legR = Find("_Leg_R"); if (legR == null) Warn("right leg (name ending _Leg_R)"); }
         if (armL == null) { armL = Find("_Arm_L"); if (armL == null) Warn("left arm (name ending _Arm_L)"); }
         if (armR == null) { armR = Find("_Arm_R"); if (armR == null) Warn("right arm (name ending _Arm_R)"); }
+    }
+
+    void Reset() { FindParts(); }
+
+    void Start()
+    {
+        FindParts();
 
         var list = new System.Collections.Generic.List<Transform>();
         foreach (var t in new[] { head, body, armL, armR }) if (t != null && !list.Contains(t)) list.Add(t);
@@ -110,7 +140,10 @@ public class NpcProceduralAnim : MonoBehaviour
             if (legL != null) legL.localRotation = legLStart * Quaternion.AngleAxis(s, axis);
             if (legR != null) legR.localRotation = legRStart * Quaternion.AngleAxis(-s, axis);
             if (armL != null) armL.localRotation = armLStart * Quaternion.AngleAxis(-s * 0.8f, axis);
-            if (armR != null) armR.localRotation = armRStart * Quaternion.AngleAxis(s * 0.8f, axis);
+            if (armR != null && !armRHeld) armR.localRotation = armRStart * Quaternion.AngleAxis(s * 0.8f, axis);
         }
+
+        if (armRHeld && armR != null)
+            armR.localRotation = armRStart * Quaternion.AngleAxis(armRHeldAngle, swingAxis.normalized);
     }
 }
