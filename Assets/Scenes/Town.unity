@@ -3647,6 +3647,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ba8726d8104d54d5899bdab8bbcb19c1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 175971384}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ba8726d8104d54d5899bdab8bbcb19c1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 175971385}
   m_SourcePrefab: {fileID: 100100000, guid: ba8726d8104d54d5899bdab8bbcb19c1, type: 3}
 --- !u!4 &175971379 stripped
 Transform:
@@ -3864,6 +3867,25 @@ MonoBehaviour:
   moveThreshold: 0.05
   armRHeld: 0
   armRHeldAngle: 0
+--- !u!114 &175971385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175971380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c723e60e4881d41628843ce62f93aa60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AlienBlink
+  headRenderer: {fileID: 0}
+  eyeMaterialIndex: -1
+  blinkMaterial: {fileID: 0}
+  minSecondsBetweenBlinks: 2
+  maxSecondsBetweenBlinks: 4
+  blinkDuration: 0.15
+  doubleBlinkChance: 0.1
 --- !u!1 &178830277 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8bbeb0dde9cd04ab38d63e16f75a3f4b, type: 3}
@@ -6346,6 +6368,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ebfc628c4ec4e4014848ccf8941faf2e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 329020564}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ebfc628c4ec4e4014848ccf8941faf2e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 329020565}
   m_SourcePrefab: {fileID: 100100000, guid: ebfc628c4ec4e4014848ccf8941faf2e, type: 3}
 --- !u!4 &329020558 stripped
 Transform:
@@ -6572,6 +6597,25 @@ MonoBehaviour:
   facingOffsetY: 0
   animator: {fileID: 0}
   speedParam: Speed
+--- !u!114 &329020565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329020559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c723e60e4881d41628843ce62f93aa60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AlienBlink
+  headRenderer: {fileID: 0}
+  eyeMaterialIndex: -1
+  blinkMaterial: {fileID: 0}
+  minSecondsBetweenBlinks: 2
+  maxSecondsBetweenBlinks: 4
+  blinkDuration: 0.15
+  doubleBlinkChance: 0.1
 --- !u!1001 &329219889
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6678,6 +6722,7 @@ GameObject:
   - component: {fileID: 330585547}
   - component: {fileID: 330585548}
   - component: {fileID: 330585549}
+  - component: {fileID: 330585550}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -6924,6 +6969,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &330585550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330585543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c723e60e4881d41628843ce62f93aa60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AlienBlink
+  headRenderer: {fileID: 0}
+  eyeMaterialIndex: -1
+  blinkMaterial: {fileID: 0}
+  minSecondsBetweenBlinks: 2
+  maxSecondsBetweenBlinks: 4
+  blinkDuration: 0.15
+  doubleBlinkChance: 0.1
 --- !u!1001 &331615806
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6992,6 +7056,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 003c5dea012154b578bab5b4df230a71, type: 3}
       insertIndex: -1
       addedObject: {fileID: 331615812}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 003c5dea012154b578bab5b4df230a71, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 331615813}
   m_SourcePrefab: {fileID: 100100000, guid: 003c5dea012154b578bab5b4df230a71, type: 3}
 --- !u!4 &331615807 stripped
 Transform:
@@ -7190,6 +7257,25 @@ MonoBehaviour:
   moveThreshold: 0.05
   armRHeld: 0
   armRHeldAngle: 0
+--- !u!114 &331615813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331615808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c723e60e4881d41628843ce62f93aa60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AlienBlink
+  headRenderer: {fileID: 0}
+  eyeMaterialIndex: -1
+  blinkMaterial: {fileID: 0}
+  minSecondsBetweenBlinks: 2
+  maxSecondsBetweenBlinks: 4
+  blinkDuration: 0.15
+  doubleBlinkChance: 0.1
 --- !u!1 &332183301 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8bbeb0dde9cd04ab38d63e16f75a3f4b, type: 3}
@@ -10626,6 +10712,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a53c4dd6531b0471ca3a31d357f2c918, type: 3}
       insertIndex: -1
       addedObject: {fileID: 464209636}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a53c4dd6531b0471ca3a31d357f2c918, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 464209637}
   m_SourcePrefab: {fileID: 100100000, guid: a53c4dd6531b0471ca3a31d357f2c918, type: 3}
 --- !u!4 &464209631 stripped
 Transform:
@@ -10839,6 +10928,25 @@ MonoBehaviour:
   moveThreshold: 0.05
   armRHeld: 0
   armRHeldAngle: 0
+--- !u!114 &464209637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464209632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c723e60e4881d41628843ce62f93aa60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AlienBlink
+  headRenderer: {fileID: 0}
+  eyeMaterialIndex: -1
+  blinkMaterial: {fileID: 0}
+  minSecondsBetweenBlinks: 2
+  maxSecondsBetweenBlinks: 4
+  blinkDuration: 0.15
+  doubleBlinkChance: 0.1
 --- !u!1 &466701980 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8bbeb0dde9cd04ab38d63e16f75a3f4b, type: 3}
@@ -12193,6 +12301,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: db49342c08c3e46f99d41b183cdfe497, type: 3}
       insertIndex: -1
       addedObject: {fileID: 507092595}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: db49342c08c3e46f99d41b183cdfe497, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 507092596}
   m_SourcePrefab: {fileID: 100100000, guid: db49342c08c3e46f99d41b183cdfe497, type: 3}
 --- !u!4 &507092590 stripped
 Transform:
@@ -12391,6 +12502,25 @@ MonoBehaviour:
   moveThreshold: 0.05
   armRHeld: 0
   armRHeldAngle: 0
+--- !u!114 &507092596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507092591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c723e60e4881d41628843ce62f93aa60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AlienBlink
+  headRenderer: {fileID: 0}
+  eyeMaterialIndex: -1
+  blinkMaterial: {fileID: 0}
+  minSecondsBetweenBlinks: 2
+  maxSecondsBetweenBlinks: 4
+  blinkDuration: 0.15
+  doubleBlinkChance: 0.1
 --- !u!1 &510356046 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3924390359808885084, guid: 8bbeb0dde9cd04ab38d63e16f75a3f4b, type: 3}
@@ -18267,7 +18397,7 @@ MonoBehaviour:
   armR: {fileID: 0}
   idleBobHeight: 0.03
   idleBobSpeed: 2
-  idleLookAngle: 10
+  idleLookAngle: 3
   swingLimbs: 1
   walkSwingAngle: 35
   stepRate: 2.2
@@ -23774,6 +23904,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2f47d2ce6734f420b8a326c2c211afb2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 964382947}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2f47d2ce6734f420b8a326c2c211afb2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 964382948}
   m_SourcePrefab: {fileID: 100100000, guid: 2f47d2ce6734f420b8a326c2c211afb2, type: 3}
 --- !u!4 &964382942 stripped
 Transform:
@@ -23972,6 +24105,25 @@ MonoBehaviour:
   moveThreshold: 0.05
   armRHeld: 0
   armRHeldAngle: 0
+--- !u!114 &964382948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964382943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c723e60e4881d41628843ce62f93aa60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AlienBlink
+  headRenderer: {fileID: 0}
+  eyeMaterialIndex: -1
+  blinkMaterial: {fileID: 0}
+  minSecondsBetweenBlinks: 2
+  maxSecondsBetweenBlinks: 4
+  blinkDuration: 0.15
+  doubleBlinkChance: 0.1
 --- !u!1 &964833811 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8bbeb0dde9cd04ab38d63e16f75a3f4b, type: 3}
@@ -27754,6 +27906,25 @@ MonoBehaviour:
   moveThreshold: 0.05
   armRHeld: 0
   armRHeldAngle: 0
+--- !u!114 &1139858302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1139858296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c723e60e4881d41628843ce62f93aa60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AlienBlink
+  headRenderer: {fileID: 0}
+  eyeMaterialIndex: -1
+  blinkMaterial: {fileID: 0}
+  minSecondsBetweenBlinks: 2
+  maxSecondsBetweenBlinks: 4
+  blinkDuration: 0.15
+  doubleBlinkChance: 0.1
 --- !u!1 &1140312270 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3924390359808885084, guid: 8bbeb0dde9cd04ab38d63e16f75a3f4b, type: 3}
@@ -39308,6 +39479,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ee572d98d4ab44bd4b991d41a7215020, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1562792808}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ee572d98d4ab44bd4b991d41a7215020, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1562792809}
   m_SourcePrefab: {fileID: 100100000, guid: ee572d98d4ab44bd4b991d41a7215020, type: 3}
 --- !u!4 &1562792803 stripped
 Transform:
@@ -39507,6 +39681,25 @@ MonoBehaviour:
   moveThreshold: 0.05
   armRHeld: 0
   armRHeldAngle: 0
+--- !u!114 &1562792809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562792804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c723e60e4881d41628843ce62f93aa60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AlienBlink
+  headRenderer: {fileID: 0}
+  eyeMaterialIndex: -1
+  blinkMaterial: {fileID: 0}
+  minSecondsBetweenBlinks: 2
+  maxSecondsBetweenBlinks: 4
+  blinkDuration: 0.15
+  doubleBlinkChance: 0.1
 --- !u!1001 &1563626390
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42796,6 +42989,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3942e81f275bf431fbca2416df59eaf9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1139858301}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3942e81f275bf431fbca2416df59eaf9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1139858302}
   m_SourcePrefab: {fileID: 100100000, guid: 3942e81f275bf431fbca2416df59eaf9, type: 3}
 --- !u!1 &1705413986 stripped
 GameObject:
@@ -44987,6 +45183,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e6970a2bc16f347ea90dcac96305b08a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1810063680}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e6970a2bc16f347ea90dcac96305b08a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1810063681}
   m_SourcePrefab: {fileID: 100100000, guid: e6970a2bc16f347ea90dcac96305b08a, type: 3}
 --- !u!4 &1810063675 stripped
 Transform:
@@ -45185,6 +45384,25 @@ MonoBehaviour:
   moveThreshold: 0.05
   armRHeld: 0
   armRHeldAngle: 0
+--- !u!114 &1810063681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810063676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c723e60e4881d41628843ce62f93aa60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AlienBlink
+  headRenderer: {fileID: 0}
+  eyeMaterialIndex: -1
+  blinkMaterial: {fileID: 0}
+  minSecondsBetweenBlinks: 2
+  maxSecondsBetweenBlinks: 4
+  blinkDuration: 0.15
+  doubleBlinkChance: 0.1
 --- !u!1 &1812563251 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8bbeb0dde9cd04ab38d63e16f75a3f4b, type: 3}
@@ -52022,6 +52240,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: eef09ad1d731345d799b5159d23c2c57, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2007976941}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: eef09ad1d731345d799b5159d23c2c57, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2007976942}
   m_SourcePrefab: {fileID: 100100000, guid: eef09ad1d731345d799b5159d23c2c57, type: 3}
 --- !u!4 &2007976936 stripped
 Transform:
@@ -52220,6 +52441,25 @@ MonoBehaviour:
   moveThreshold: 0.05
   armRHeld: 0
   armRHeldAngle: 0
+--- !u!114 &2007976942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007976937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c723e60e4881d41628843ce62f93aa60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AlienBlink
+  headRenderer: {fileID: 0}
+  eyeMaterialIndex: -1
+  blinkMaterial: {fileID: 0}
+  minSecondsBetweenBlinks: 2
+  maxSecondsBetweenBlinks: 4
+  blinkDuration: 0.15
+  doubleBlinkChance: 0.1
 --- !u!1 &2010274712 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8bbeb0dde9cd04ab38d63e16f75a3f4b, type: 3}
@@ -53815,6 +54055,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 97864b62c755c4361a17b46961ea5d60, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2085524779}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 97864b62c755c4361a17b46961ea5d60, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2085524780}
   m_SourcePrefab: {fileID: 100100000, guid: 97864b62c755c4361a17b46961ea5d60, type: 3}
 --- !u!4 &2085524774 stripped
 Transform:
@@ -54013,6 +54256,25 @@ MonoBehaviour:
   moveThreshold: 0.05
   armRHeld: 0
   armRHeldAngle: 0
+--- !u!114 &2085524780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2085524775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c723e60e4881d41628843ce62f93aa60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AlienBlink
+  headRenderer: {fileID: 0}
+  eyeMaterialIndex: -1
+  blinkMaterial: {fileID: 0}
+  minSecondsBetweenBlinks: 2
+  maxSecondsBetweenBlinks: 4
+  blinkDuration: 0.15
+  doubleBlinkChance: 0.1
 --- !u!1 &2091052756 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b9c2b9934c4fe45158b288b584960f32, type: 3}
@@ -56367,6 +56629,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bbd2bd27ccc2b4769850a17e3dadfa74, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2146322634}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bbd2bd27ccc2b4769850a17e3dadfa74, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2146322635}
   m_SourcePrefab: {fileID: 100100000, guid: bbd2bd27ccc2b4769850a17e3dadfa74, type: 3}
 --- !u!4 &2146322628 stripped
 Transform:
@@ -56588,6 +56853,25 @@ MonoBehaviour:
   facingOffsetY: 0
   animator: {fileID: 0}
   speedParam: Speed
+--- !u!114 &2146322635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146322629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c723e60e4881d41628843ce62f93aa60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AlienBlink
+  headRenderer: {fileID: 0}
+  eyeMaterialIndex: -1
+  blinkMaterial: {fileID: 0}
+  minSecondsBetweenBlinks: 2
+  maxSecondsBetweenBlinks: 4
+  blinkDuration: 0.15
+  doubleBlinkChance: 0.1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

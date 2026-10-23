@@ -1231,7 +1231,7 @@ MonoBehaviour:
   armR: {fileID: 0}
   idleBobHeight: 0.03
   idleBobSpeed: 2
-  idleLookAngle: 10
+  idleLookAngle: 3
   swingLimbs: 1
   walkSwingAngle: 35
   stepRate: 2.2
